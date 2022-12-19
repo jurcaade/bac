@@ -120,33 +120,26 @@ int main() {
 
 3)
          
-   #include <iostream>
-   #include <fstream>
+  #include <iostream>
+
 using namespace std;
 
 int main() {
-fstream cin("bac.in",ios::in);
-    int x, ok=0, v[100], i=1, n, nr=0;
+    int x, u,z , v[100], nr=0;
     while (cin>>x)
-    v[i++]=x;
-   
-   n=i-1; 
+       v[x]=1;
+
+
   int k; int y=2;
- 
 
   for (k=98 ;k>=10; k--)
    { 
        if (y>0)
       { 
-         ok=1;
-       
-           for (i=1;i<=n;i++)
-            {   
-                if (k==v[i])
-                ok=0;
-            } 
-            
-      if (ok==1)
+          u=k%10;
+          z=k/10;
+    
+            if(u!=z && v[k]!=1)
        {
            cout<<k<<" ";
             y--;
@@ -157,5 +150,4 @@ fstream cin("bac.in",ios::in);
  if (nr==0)
  cout<<"nu exista";
     return 0;
-}         
-
+}
