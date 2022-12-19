@@ -121,10 +121,12 @@ int main() {
 3)
          
   #include <iostream>
+  #include <fstream>
 
 using namespace std;
 
 int main() {
+  fstream cin("bac.in",ios::in);
     int x, u,z , v[100], nr=0, k, y=2;
     while (cin>>x)
        v[x]=1;
@@ -148,3 +150,8 @@ int main() {
  cout<<"nu exista";
     return 0;
 }
+/*Algoritmul este eficient dpdv al timpului de executie deoarece, are o complexitate O(n), unde n reprezinta numarul de elemente din fisier.
+Algoritmul citeste numerele din fisier si le memoreaza intr un vector de pozitie. Cu structura repetitiva for verificam numerele de doua cifre
+incepand cu 98 daca au cifra unitatilor si cifra zecilor diferita si daca nu apartin sirului de numere. Daca conditia este adevarata afisam 
+numarul de doua cifre si scadem y, y reprezentand numarul de termeni ce trebuie afisati. De asemenea cu variabila nr numaram termenii care
+indeplinesc conditia. In final daca nu exista nici un numar ce indeplineste conditia afisam textul "nu exista". */
