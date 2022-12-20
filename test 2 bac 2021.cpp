@@ -32,3 +32,39 @@ ultima e: c) 5454
   tip -1 21
   
   b) 12345 13456
+c) #include <iostream>
+using namespace std;
+int main()
+{
+  unsigned int n;
+  cin>>n;
+  int s,c1,c2;
+  s=1;
+  c1=n%10; n/=10; c2=n%10;
+  if (c1==c2)
+    s=0;
+    else
+     if (c1<c2)
+       s=-1;
+       
+  while ((c1-c2)*s>0 && n>9)
+  {c1=n%10; n/=10; c2=n%10;}
+  cout<<s<<" "<<n;
+  return 0;
+}
+d)
+  citește n (număr natural, n>9)
+s1
+c1n%10; n[n/10]; c2n%10
+┌dacă c1=c2 atunci s0
+│altfel
+│┌dacă c1<c2 atunci s-1
+│└■
+└■
+daca (c1-c2)*s>0 și n>9 atunci
+┌repeta 
+│ c1n%10; n[n/10]; c2n%10
+└pana cand (c1-c2)*s<=0 sau n<=9
+scrie s,' ',n
+
+      
