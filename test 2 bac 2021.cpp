@@ -90,10 +90,66 @@ struct polinom
 }
    
 
+sub 3.
+  1.
+  void factori (int n, int m)
+{
+    int d=2, p1=0, p2=0, nr=0;
+    while (n>1 && m>1)
+    {
+        p1=0;
+        p2=0;
+        while (n%d==0 || m%d==0)
+        {
+            if (n%d==0)
+         {   n/=d; 
+            p1++;
+             
+         }
+            if (m%d==0)
+        {    m/=d;
+            p2++;
+            
+        }
+        
+        }
+        
+      if (p1>0 && p2>0)
+        if (p1==p2)
+         nr++;
+        
+        d++;
+    }
+    return nr;
+}
 
+2.#include <iostream>
 
+using namespace std;
 
-
+int main() {
+    int n, a[21][21];
+    cin>>n;
+    for (int i=1;i<=n;i++)
+    for (int j=n;j>0;j--)
+   {     
+       if (i+j==n+1)
+         a[i][j]=n;
+         
+       if (i+j<n+1)
+         a[i][j]=a[i][j+1]-1;
+         
+        if (i+j>n+1)
+        a[i][j]=a[i-1][j]-1;
+}
+    
+    for (int i=1;i<=n;i++)
+ {   for (int j=1;j<=n;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
 
 
 
