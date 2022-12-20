@@ -67,4 +67,37 @@ daca (c1-c2)*s>0 și n>9 atunci
 └pana cand (c1-c2)*s<=0 sau n<=9
 scrie s,' ',n
 
+2.
+struct polinom 
+{
+  unsigned int grad;
+  float coeficient[100]
+}p;
+
+
+3. 
+   char s[21], voc[21]="aeiouAEIOU";
+   int ok=0;
+   for (int j=0;j<strlen(voc);j++)
+ {   ok=1;
+     for (int i=0;i<strlen(s);i++)
+      if (s[i]==voc[j])
+         ok=0;
+         
+         
+         if (ok==1)
+         cout<<voc[j];
+}
+   
+
+
+
+
+
+
+
+
+
+
+
       
