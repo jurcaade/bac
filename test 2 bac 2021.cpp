@@ -151,7 +151,34 @@ int main() {
     return 0;
 }
 
+3.
+  #include <iostream>
+#include <fstream>
+using namespace std;
 
+int main() {
+  fstream f("bac.in';ios::in);
+    int v[100],x,i=1,s1=0, s2=0;
+    while (f>>x)
+    {
+        v[i++]=x;
+    }
+    int n=i-1;
+    
+    for (int i=n;i>=1;i--)
+         if (v[i]>0)
+         s1=n-i+1;
+         
+    for (int i=1;i<=n;i++)
+        if (v[i]>0)
+        s2=i;
+         
+         if (s1>s2)
+         cout<<s1;
+         else
+         cout<<s2;
+    return 0;
+}
 
 
 
