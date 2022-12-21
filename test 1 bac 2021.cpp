@@ -127,7 +127,7 @@ using namespace std;
 
 int main() {
   fstream cin("bac.in",ios::in);
-    int x, u,z , v[100], nr=0, k, y=2;
+    int x, u,z , v[100]={}, nr=0, k, y=2;
     while (cin>>x)
        v[x]=1;
 
