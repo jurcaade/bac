@@ -180,7 +180,31 @@ int main() {
     return 0;
 }
 
+2
+            #include <fstream>
+#include <iostream>
+using namespace std;
 
+int main()
+{
+  int n, poz=0, lung1,lung2, lmax=,st=0,dr;
+  while(cin>>n)
+    {
+      poz++;
+      if(n>0)
+      {
+        if(st==0)
+        {
+          st=poz;
+        }
+        dr=poz;
+      }
+    }
+  lung1=dr;
+  lung2=poz-st+1;
+  cout<<max(lung1,lung2);
+    return 0;
+}
 
 
       
