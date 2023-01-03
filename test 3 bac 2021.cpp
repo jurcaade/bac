@@ -147,8 +147,41 @@ int main() {
           cout<<"nu exista";
     return 0;
 }
-  
-  
-  
-  
+  ex 3
+    
+  #include <iostream>
+  #include <fstream>
+
+using namespace std;
+fstream cin("bac.in",ios::in);
+int main() {
+    int v[101],x,i=1,n;
+    while (cin>>x)
+        v[i++]=x;
+        
+    n=i-1; 
+    int c=0,nr=1,max=0,k;
+    
+    for (i=1;i<=n;i++)
+  {      x=v[i]/10%10;
+         nr=1;
+        for ( k=i+1;k<=n;k++)
+         if (v[k]/10%10==x)
+   {       nr++;
+            c=k;
+  }
+              if (nr>max)
+              max=nr;
+              
+            if (nr==max)  
+            cout<<c<<" ";
+}
+cin.close();
+    return 0;
+}
+  a) /*Algoritmul este eficient dpdv al timpului de executie deoarece are o complexotate O(n), unde n reprezinta numarul de elemente din fisier
+  Algoritmul memoreaza elementele fisierului intr un vector. Se parcurg elementele vectorului si pentru fiecare numar retinem cifra zecilor prin variabila x.
+  Aceasta variabila o comparam pe rand cu cifra zecilor elementelor ramase in vector. In cazul unei conditii adevarate, anume gasim doua numere cu aceeasi cifra
+  a zecilor o numaram si retinem pozitia sa in vector prin intermediul variabilei simple c. Gasim maximul de numere cu aceeasi cifra a zecilor si astfel
+  afisam poziția din șir pe care se află termenul precedat de un număr maxim de valori z-prietene cu el.
   
