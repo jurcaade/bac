@@ -71,4 +71,56 @@ x0; m0; p1
 └■
 scrie m
    
+        2.
         
+struct muzeu
+{
+  unsigned int numar;
+  struct FaraNume
+    {
+        char nume[21];
+        char colectie[21];
+    }exponat[101]
+  }m;
+
+3. s=muzeu
+s[0]=n
+tip un
+s=zeu
+tip zeu
+un
+zeu
+
+
+sub 3
+  1. #include <iostream>
+
+using namespace std;
+int suma(int n)
+{
+    int ok=0, s=1;
+    for (int d=1; d<=n; d++)
+    {  ok=0;
+        for (int k=2; k<=d/2;k++)
+         if (d%k==0)
+            ok=1;
+            
+     if (ok==1)
+         if (n%d==0)
+        s+=d;
+    }
+    return s;
+}
+int main() {
+    int n;
+    cin >> n;
+  cout<<suma(n);
+    return 0;
+}
+  
+  
+  
+  
+  
+  
+  
