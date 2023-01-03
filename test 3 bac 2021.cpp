@@ -118,7 +118,35 @@ int main() {
     return 0;
 }
   
-  
+  2. #include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,a[401][401];
+    cin >> m >> n;
+    for (int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+        cin>>a[i][j];
+    int ok=0, nr=0;
+    
+    for (int i=1;i<=m;i++)
+    { ok=0;
+    
+        for (int k=1;k<=m;k++)
+             if (a[i][1]!=0)
+             if (a[i][1]==a[k][n])
+             ok=1;
+             
+             if (ok==1)
+     {        cout<<a[i][1]<<" ";
+             nr++;
+    }
+    }
+          if (nr==0)
+          cout<<"nu exista";
+    return 0;
+}
   
   
   
