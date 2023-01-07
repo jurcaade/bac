@@ -62,9 +62,39 @@ int main() {
     return 0;
 }
   
-  
-  
-  
+  d)
+       citeşte n, k
+ (numere naturale)
+p1
+daca  n>0 atunci
+┌repeta
+│ cn%10
+│┌dacă k>0 atunci
+││ ┌dacă c%2=1 atunci
+││ │ pp*c
+││ └■
+│└■
+│ n[n/10]; kk-1
+└pana cand n<=0
+scrie p
+
+2. struct ciocolata
+{
+      unsigned int gramaj;
+     struct FaraNume 
+     {
+          unsigned int zi, luna, an;
+     }datae;
+     
+}c;
+ 
+
+3. s=sanataTEA
+  tip 9
+  i=0;
+0<9 A
+tip sntTEA
+  tip 9sntTEA
   
   
   
