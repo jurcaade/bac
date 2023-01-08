@@ -146,7 +146,65 @@ int main() {
     return 0;
 }
   
-  
+  3.
+       #include <iostream>
+#include <fstream>tsream>
+using namespace std;
+int main() 
+{
+  fstream f("bac1.txt",ios::in);
+  fstream g("bac2.txt",ios::in);
+    int n1,n2,i1=1,i2=1,x1,x2;
+       f>>n1>>x1;
+       g>>n2>>x2;
+    
+    while(i1<=n1 && i2<=n2)
+    {
+        if (x1==x2)
+        {
+            f>>x1;
+            g>>x2;
+            i1++;
+            i2++;
+        }
+        
+        if (x1<x2)
+        {
+            if (x1%5==0)
+            cout<<x1<<" ";
+            f>>x1;
+            i1++;
+            
+        }
+        
+         if (x2<x1)
+        {
+            if (x2%5==0)
+            cout<<x2<<" ";
+            g>>x2;
+            i2++;
+            
+        }
+    }
+        
+  while (i1<=n1)
+  { 
+      f>>x1;
+      i1++;
+       if (x1%5==0)
+     cout<<x1<<" ";
+     
+  }
+         while (i2<=n2)
+        {
+            g>>x2;
+            i2++;
+            if (x2%5==0)
+            cout<<x2<<" ";
+           
+        }
+        return 0;
+}
   
   
   
