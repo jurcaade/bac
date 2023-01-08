@@ -96,8 +96,55 @@ scrie p
 tip sntTEA
   tip 9sntTEA
   
+  sub 3
+     1. 
+//#include <iostream>
+//using namespace std;
+     
+int joc (int n)
+{
+    int k=0;
+  for (int d=2;d<=n;d++)
+    if (n%d==0)
+       k++;
+    return k;
+    
+}
+/*int main() {
+    int n;
+    cin >>n;
+    cout<<joc(n);
+    return 0;
+}*/
   
-  
+2.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,a[101][101],p=0;
+    cin>>m>>n;
+    
+    for (int i=1;i<=m;i++)
+        for (int j=1;j<=n;j++)
+        cin>>a[i][j];
+    
+    
+    for (int i=1;i<=m;i++)
+       {
+           p=0;
+           for (int j=1;j<=n;j++)
+             if ((a[i][j]<21) && (a[i][j]>p))
+                 p=a[i][j];
+             
+             if (p!=0)
+            cout<<p<<endl; 
+            else
+            cout<<"nu exista"<<endl;
+       }
+    
+    return 0;
+}
   
   
   
