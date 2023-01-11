@@ -36,4 +36,22 @@ sub 3
     }
   return 1;
 }
-  
+  sub 3 ex 3
+    int main()
+{
+ int i,n,maxi=0,x;
+  f>>n;
+for (int i=1;i<=n;i++)
+  {
+    f>>x;
+    if (x>maxi)
+      maxi=x;
+    
+    cout<<maxi<<" ";
+  }
+    return 0;
+}
+
+
+/*
+
