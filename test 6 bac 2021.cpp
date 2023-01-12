@@ -127,10 +127,11 @@ int main() {
 }
   
   3.#include <iostream>
-
+#include <fstream>
 using namespace std;
 
 int main() {
+	fstream cin("bac.in",ios::in);
     int x,l1=1,l2=1,lmax=0,nr=0;
     while (cin>>x)
     {
@@ -154,11 +155,17 @@ int main() {
         
     }
     cout<<lmax;
+	cin.close();
     return 0;
 }
 
-
-
+Algoritmul este eficient din punct de vedere al memoriei deoarece utilizeaza 5 variabile simple.
+Algoritmul este eficient din punct de vedere al timpului de executie deoarece are o complexitate O(n) unde n este numarul termenilor din fisier.
+Programul citeste pe rand fiecare element din fisier. Pentru fiecare numar pozitiv numaram termenii pana la primul numar negativ,
+cu variabila l1, cat si pana la cel de al doilea numar negativ, cu variabila l2. Cand algoritmul intalneste un element negativ, il numara
+si verifica daca este cel de al doilea. Daca conditia este adevarata se gaseste lungimea maxima comparand-o cu numarul elem. pana la al doilea
+numar negativ, aceasteia urmand sa i se atribuie valoarea lungimii de la numarul negativ precedent pana la pozitia actuala. nr se reseteaza la 1
+(deoarece il contine pe nr negativ), si l1 la fel. In final se afiseaza lungimea maxima.
 
 
 
