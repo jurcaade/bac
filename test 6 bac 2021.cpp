@@ -126,7 +126,36 @@ int main() {
     return 0;
 }
   
-  
+  3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,l1=1,l2=1,lmax=0,nr=0;
+    while (cin>>x)
+    {
+        if (x>0)
+     {   l1++;
+        l2++;
+    }
+        else 
+        {
+         nr++;
+         if (nr==2)
+         {
+             nr=1;
+             if (l2>lmax)
+              lmax=l2;
+             l2=l1;
+         }
+        l1=1;
+        }
+        
+        
+    }
+    cout<<lmax;
+    return 0;
+}
 
 
 
