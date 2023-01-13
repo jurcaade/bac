@@ -52,7 +52,7 @@ m10
 ┌dacă n=0 atunci
 │ m0
 │altfel
-|cn%10; n[n/10]
+|//cn%10; n[n/10]
 │┌cat timp n!=0 executa
 ││ cn%10; n[n/10]
 ││┌dacă c<=m atunci mc
