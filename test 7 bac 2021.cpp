@@ -175,6 +175,8 @@ int main() {
     return 0;
 }
 
-Algoritmul este eficient din punct de vedere al timpului de executie deoarece 
+Algoritmul este eficient din punct de vedere al timpului de executie deoarece are o complexitate O(n) unde n este numarul de termeni din fisier.
+  Se citesc toate cifrele din fisier si cele pare se retin intr-un vector. Apoi se sorteaza cifrele din vector in ordine crescatoare urmand ca mai apoi
+  sa fie afisate parcurgandu-se sirul.
   
   
