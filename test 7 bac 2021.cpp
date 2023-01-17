@@ -138,6 +138,43 @@ int main() {
     return 0;
 }
 
-  
+  3.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x, v[101],i=1,n=0,ok=0,aux,j;
+
+    while (cin>>x)
+    {
+        if (x%2==0)
+     {    v[i++]=x;
+         ok=1;
+    }
+      
+    }
+    n=i-1;
+    
+     for(i=1;i<=n;i++)
+        for(j=i+1;j<=n;j++)
+        if (v[j]<v[i]) {
+         aux=v[i];
+         v[i]=v[j];
+         v[j]=aux;
+    }
+    
+    for (i=1;i<=n;i++)
+    cout<<v[i]<<" ";
+       
+
+ if (ok==0)
+    cout<<"nu exista";
+
+
+    return 0;
+}
+
+Algoritmul este eficient din punct de vedere al timpului de executie deoarece 
   
   
