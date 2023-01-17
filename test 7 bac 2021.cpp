@@ -47,3 +47,43 @@ int main() {
     cout<<n;
     return 0;
 }
+
+d
+citește x (număr natural)
+n0
+daca x≠0 atunci
+┌repeta
+│ yx; c0
+│ ┌cât timp y>0 execută
+│ │ ┌dacă y%10>c atunci
+│ │ │ cy%10
+│ │ └■
+│ │ y [y/10]
+│ └■
+│ nn*10+c
+│ citește x (număr natural)
+└pana cand (x==0)
+scrie n
+
+2.
+if(e.dataNasterii.an > dataEveniment.an || (e.dataNasterii.an == dataEveniment.an && e.dataNasterii.luna > dataEveniment.luna)
+   || (e.dataNasterii.an == dataEveniment.an && e.dataNasterii.luna == dataEveniment.luna && e.dataNasterii.zi > dataEveniment.zi))
+    cout << "ulterior";
+else
+    cout << "nu";
+
+3. s=ABCDUECDA
+ i=0 j=8
+  A=A
+  s=BCDUECD
+  j=6
+ i=1 j=5
+  C=C
+  s=BDUED
+  
+  sub 3
+  
+  
+  
+  
+  
