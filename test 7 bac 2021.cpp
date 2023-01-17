@@ -107,7 +107,37 @@ int main() {
     return 0;
 }
 
-  
+  2.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,i=1,j=1,a[101][101],nr=0,aux;
+    cin>>n;
+    aux=n;
+    while (n>0)
+    {
+        nr++;
+        n/=10;
+    }
+    n=aux;
+
+   for (int j=nr;j>=1;j--)
+  { for (int i=1;i<=nr;i++)
+    a[i][j]=n%10;
+    n/=10;
+}
+
+
+ for (int i=1;i<=nr;i++)
+ {   for (int j=1;j<=nr;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
+
   
   
   
