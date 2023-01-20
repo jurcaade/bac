@@ -55,3 +55,29 @@ int main()
 
     return 0;
 }
+2.
+  
+#include <iostream>
+
+using namespace std;
+
+    int main()
+    {
+
+
+    int n, a[101][101],s=0;
+    cin>>n;
+    for (int i=1;i<=n;i++)
+        for (int j=1;j<=n;j++)
+        cin>>a[i][j];
+
+    for (int i=1;i<=n;i++)
+        for (int j=1;j<=n-1;j++)
+            if (i<j && i+j>n+1)
+            s+=a[i][j];
+
+        cout<<s;
+
+    return 0;
+}
+
