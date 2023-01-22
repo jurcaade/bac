@@ -80,4 +80,31 @@ using namespace std;
 
     return 0;
 }
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int d=2,n,m=0,nr=0, nrmax=0, dmax;
+    cin>>n;
+   for (int i=2;i<=n;i++)
+    { d=2; nr=0;
+    while (i>1)
+    {nr++;
+        while (i%d==0)
+        {
+        nr++;
+        i=i/d;
+        }
+
+    d++;
+    }
+    if (nr>nrmax)
+    nrmax=nr;
+    }
+m=nrmax;
+cout<<m;
+return 0;
+}
+
 
