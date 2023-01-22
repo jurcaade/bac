@@ -141,4 +141,28 @@ int main() {
     
     return 0;
 }
+ex 3
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int x, n1=0,n2=0;
+
+   while (cin>>x)
+   {
+
+       if (x%2!=0)
+      {
+        n2=n1;
+        n1=x;
+      }
+
+
+   }
+cout<<n2<<" "<<n1;
+    return 0;
+}
+
 
