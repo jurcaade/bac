@@ -80,6 +80,7 @@ using namespace std;
 
     return 0;
 }
+ex 1
 #include <iostream>
 
 using namespace std;
@@ -106,5 +107,38 @@ m=nrmax;
 cout<<m;
 return 0;
 }
-
+#include <iostream>
+#include <cmath>
+using namespace std;
+void nrfp (int n, int &m)
+{
+    cin>>n; int nr=0, nrmax=0;
+    for (int i=2;i<=n;i++)
+    { nr=0;
+        for (int d=2; d<=sqrt(i);d++)
+       { if (i%d==0)
+         nr++;
+         if (i/d!=d)
+         nr++;
+       }
+       if (nr>nrmax)
+     {
+        nrmax=nr;
+       m=i;
+    }
+      
+     else if(nr==nrmax && i>m)
+      m=i;
+    }
+    
+}
+int main() {
+    
+    int n,m;
+    cin>>n;
+    nrfp(n,m);
+    cout<<m;
+    
+    return 0;
+}
 
