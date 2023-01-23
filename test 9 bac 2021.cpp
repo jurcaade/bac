@@ -116,3 +116,40 @@ int main() {
   
     return 0;
 }
+
+3.
+  
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,i=1, v[101],n;
+    while (cin>>x)
+    {
+        while (x>0)
+     {   v[i++]=x%10;
+        x/=10;
+     }
+    }
+     n=i-1;
+     
+     int aux;
+     for (i=1;i<=n;i++)
+     for (int j=i;j<=n;j++)
+     if (v[i]<v[j])
+     {
+         aux=v[i];
+         v[i]=v[j];
+         v[j]=aux;
+     }
+     for (i=1;i<=n;i++)
+     cout<<v[i];
+}
+
+Algoritmul este eficient din punct de vedere al executiei deoarece are o complexitate O(n+n) unde n este numarul cifrelor numerelor din fisier.
+  Algoritmul citeste fiecare numar din fisier si memoreaza intr un vector fiecare cifra a acestora. Apoi se sorteaza in ordine descrescatoare elementele
+  vectorului si se afiseaza.
+
