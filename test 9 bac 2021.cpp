@@ -149,7 +149,7 @@ int main()
      cout<<v[i];
 }
 
-Algoritmul este eficient din punct de vedere al executiei deoarece are o complexitate O(n+n) unde n este numarul cifrelor numerelor din fisier.
+Algoritmul este eficient din punct de vedere al executiei deoarece are o complexitate O(n) unde n este numarul cifrelor numerelor din fisier.
   Algoritmul citeste fiecare numar din fisier si memoreaza intr un vector fiecare cifra a acestora. Apoi se sorteaza in ordine descrescatoare elementele
   vectorului si se afiseaza.
 
