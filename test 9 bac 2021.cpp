@@ -86,3 +86,33 @@ int main() {
   cout<<nr;
     
 }
+
+2.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+   char s[101],*p, t,nr=0;
+   cin.getline(s,101);
+     p=strtok(s," ");
+     while (p!=NULL)
+     {
+         t=' ';
+         nr=0;
+         for (int i=0;i<strlen(p);i++)
+            if (strchr("aeiou",p[i]) && (p[i]!=t))
+            {
+                nr++;
+                t=p[i];
+              
+            }
+        if (nr==1)
+        cout<<p<<endl;
+         
+         p=strtok(NULL, " ");
+     }
+  
+    return 0;
+}
