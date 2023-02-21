@@ -148,9 +148,27 @@ int main() {
     return 0;
 }
 
+3.
+#include <iostream>
 
+using namespace std;
 
-
+int main() {
+    int x,n,nr=0;
+    cin>>x;
+    n=x;
+    while (cin>>x)
+ {   if(x<n)
+   nr++;
+}
+cout<<nr+1;
+    return 0;
+}
+/*
+Algoritmul este eficient dpdv al memoriei deoarece utilizeaza 3 variabile simple de tip intreg.
+  Algortimul ese eficient din punct de vedere al timpului de executie doarece are o complecitate O(n) unde n este numarul de elem din fisier.
+  Se citeste primul termen din fisier si se memorieaza in variabila n. Mai apoi se citesc restul elem din fisier si se verfica daca sunt mai mici decat primul.
+  In acest caz se numara. */
 
 
   
