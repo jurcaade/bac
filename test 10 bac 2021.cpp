@@ -126,7 +126,27 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
 
+using namespace std;
+
+int main() {
+   int m,n,a[21][21];
+   cin>>m>>n;
+   
+   for (int i=1;i<=m;i++)
+       for (int j=1;j<=n;j++)
+         cin>>a[i][j];
+         
+         
+    for(int i=2;i<=m;i++)
+    for (int j=1;j<=n-1;j++)
+   if (a[1][j]==a[i][n])
+   cout<<a[1][j]<<" ";
+   
+    return 0;
+}
 
 
 
