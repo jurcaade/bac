@@ -60,3 +60,34 @@ a[k][1]=aux;
     
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,n,nr=0;
+    cin>>x;
+     n=x;
+    
+    while (cin>>x)
+    {
+        if (x>=n)
+        nr++;
+    }
+    cout<<nr+1;
+    return 0;
+}
+Algortimul este eficient dpdv al memoriei deoarece utilizeaza 3 variabile simple de tip intreg.
+  Algortitmul este eficient dpdv al timpului de executie deoarece prezinta o complexotate O(n) unde n este numarul elem. din fisier.
+  Se citeste primul termen din fisier iar mai apoi restul. Se verifica cati termeni sunt mai mari sau egali cu primul.
+  Mai apoi se afiseaza adaugand 1, care reprezinta pozitia sa.
+  
+  
+  
+  
+  
+  
+  
+  
