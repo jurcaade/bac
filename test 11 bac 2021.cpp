@@ -159,7 +159,26 @@ int main() {
        
     return 0;
 }
-  
+  3.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,k,p;
+    cin >> x>>y;
+   cout<<y<<" "<<x<<" ";
+    int n=(y-x)/2;
+    n=n-1;
+p=x;
+for (int i=n;i>=1;i--)
+ {  
+    k=p-2*i;
+     cout<<k<<" ";
+     p=k;
+}
+    return 0;
+}
   
   
   
