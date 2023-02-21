@@ -76,7 +76,55 @@ pana cand m>n
   tip 2021
        b!a!c!
   
-  
+  sub 3
+  1.
+  #include <iostream>
+
+using namespace std;
+
+void imog(int x, int y, int &rez)
+{
+    int n1=0,n2=0,p=1,k=0;
+    
+    while (x>0){ 
+        
+     if ((x%10)%2!=0){
+       n1=n1+x%10*p;
+        p*=10;
+ }
+        x/=10;
+}
+
+p=1;
+
+    while (y>0){
+        
+     if ((y%10)%2!=0){
+       n2=n2+y%10*p;
+        p*=10;
+ }
+        y/=10;
+}
+
+    while (n1>0)
+     {
+     k=k*10+n1%10;
+     n1/=10;
+     }
+
+        if (k==n2)
+        rez=1;
+        else
+        rez=0;
+
+}
+int main() {
+    int x,y,rez;
+    cin >> x>>y;
+  imog(x,y,rez);
+  cout<<rez;
+    return 0;
+}
   
   
   
