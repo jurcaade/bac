@@ -1,7 +1,7 @@
 sub 1
   1.c
   2.b
-  3.b
+  3.a
   4.c
   5.d
  
@@ -15,7 +15,7 @@ sub 1
   m=9 *
   m=11 *
   tip ****
-  b 2,3
+  b 1, 157
   c.
   #include <iostream>
 
