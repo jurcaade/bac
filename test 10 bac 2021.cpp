@@ -73,4 +73,30 @@ d.citeşte x,y (numere naturale)
 |pana cand x<y
 └■
 
+2. struct elev
+{
+  unsigned int cod;
+  float nota1, nota2;
+} y[30];
+
+3. s=vorbeste
+vorveste
+vorverte
+porverte
+pomverte
+pomverde
+t=pomvedrde
+t=pom
+tip pom
+    verde
+    
+    
+
+
+
+
+
+
+
+
   
