@@ -11,7 +11,7 @@ sub 2
   2<5 A m=5
   tip 5 NU
   
-  b.137, 149 
+  b.138, 318 
   c.
   #include <iostream>
 
@@ -58,4 +58,21 @@ d.
 │altfel scrie m, ‘NU’
 └■
 
-  
+  2.
+  struct procesor
+  {
+      char producator;
+      unsigned int frecventa;
+      float pret;
+  }p[20];
+
+3.
+    
+    
+    
+    
+    
+    
+    
+    
+    
