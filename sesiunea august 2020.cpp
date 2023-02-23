@@ -40,4 +40,22 @@ int main() {
     
     return 0;
 }
+
+d.
+    citește n (număr natural)
+ m0
+ cn%10; n[n/10]
+│┌dacă c<5 atunci mm-2*c
+││altfel mm+c
+■└■
+┌cat timp (n!=0) executa
+│ cn%10; n[n/10]
+│┌dacă c<5 atunci mm-2*c
+││altfel mm+c
+│└■
+└■
+┌dacă m=0 atunci scrie ‘DA’
+│altfel scrie m, ‘NU’
+└■
+
   
