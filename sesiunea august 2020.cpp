@@ -66,7 +66,74 @@ d.
       float pret;
   }p[20];
 
-3.
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[51][51];
+    
+    for (int i=0;i<6;i++)
+        for (int j=0;j<4;j++)
+        cin>>a[i][j];
+        
+        int aux;
+        
+    for (int i=0;i<6;i++)
+    for (int j=i+1;j<4;j++)
+    {
+        if (a[i][2]%2==0 && a[j][2]%2==0)
+            if (a[i][2]>a[j][2])
+            {
+                aux=a[i][2];
+                a[i][2]=a[j][2];
+                a[j][2]=aux;
+                
+            }
+        
+    }
+        for (int i=0;i<6;i++)
+       { for (int j=0;j<4;j++)
+        cout<<a[i][j]<<" ";
+        cout<<endl;
+    }
+    
+    return 0;
+}
+
+sub 3
+    1.
+    #include <iostream>
+
+using namespace std;
+
+int kpn (int a, int b, int k)
+{
+    int nr=0,s=0,i;
+    
+    while (nr<k)
+    for (i=a;i<=b;i++)
+    {   s=0;
+        for (int d=1;d<=i;d++)
+            if (i%d==0)
+            s+=d;
+        
+        if (s%2==i%2)
+        nr++;
+         
+ }
+    return i;
+}
+
+
+
+int main() {
+    int a,b,k;
+    cin>>a>>b>>k;
+   cout<<kpn(a,b,k);
+    
+    return 0;
+}
     
     
     
