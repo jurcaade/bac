@@ -147,3 +147,8 @@ int main() {
     cout<<maxi<<" ";
     return 0;
 }
+
+Algoritmul este eficient dpdv al timpului de executie deoarece prezinta o cpmplexitate O(n) unde n este nr elem din fisier.
+  Algoritmul este eficient din punct de vedere al spatiului de memorie deoarece are 6 variabile simple de tip intreg.
+  Algoritmul retine in variabilele pre1, pre2 si x 3 termeni consecutivi din fisier. Se verifica daca teremneul este varf si se
+  gaseste diferenta absoluta dintre vecinii sai. Gasim diferenta minima si afisam termenul mai mare ce corespunde cerintei.
