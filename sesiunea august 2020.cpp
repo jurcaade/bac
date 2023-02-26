@@ -109,7 +109,7 @@ using namespace std;
 
 int kpn (int a, int b, int k)
 {
-    int nr=0,s=0,i;
+    int nr=0,s=0,i,ok=0;
     
 
     for (i=a;i<=b;i++)
@@ -123,11 +123,13 @@ int kpn (int a, int b, int k)
         nr++;
         
         if (nr==k)
-        break;
+        {    ok=1;
+            return i;}
+        
      }  
 
- 
-    return i;
+ if (ok==0)
+    return -1;
 }
 
 
@@ -179,7 +181,28 @@ int main() {
     return 0;
 }
     
-    
+    3.
+        #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,maxi=0,ok=0;
+    while (cin>>x)
+    {
+        if (x>9 && x<100)
+     {   if (x>maxi)
+        maxi=x;
+        ok=1;
+    }
+    }
+    int a=9, b=maxi+1;
+    if (ok==0)
+    cout<<"nu exista";
+    else
+    cout<<a<<" "<<b;
+    return 0;
+}
     
     
     
