@@ -1,3 +1,15 @@
+sub 1
+    
+    1.b
+    2.c
+    3. a 5 a (caps, mere, pere, porto)
+       a 6 a -- c
+    4.d
+    5.b
+    
+    
+    
+    
 sub 2
 1.a. n=247388
     m=0
