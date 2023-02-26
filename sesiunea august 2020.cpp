@@ -199,6 +199,7 @@ int main() {
 using namespace std;
 
 int main() {
+    fstream cin ("bac.txt",ios::in);
     int x,maxi=0,mini=99,ok=0;
     while (cin>>x)
     {
@@ -219,7 +220,9 @@ int main() {
     return 0;
 }
     
-    
+    Algoritmul este eficient dpdv al timpului de executie deoarece prezinta o complexitate O(n) unde n este numarul elementelor din fisier.
+        Algoritumul este eficient dpdv al memoriei utilizate deoarece contine doar 6 variabile simple de tip intreg.
+        Algoritmul citeste pe rand termenii din fisier si verifica daca sunt de 2 cifre. In acest caz gaseste minimul si maximul.
     
     
     
