@@ -43,3 +43,28 @@ d.
 ┌dacă m>0 atunci scrie m
 │altfel scrie „niciunul”
 └■
+
+2. struct figura
+{
+  struct 
+  {
+    float x;
+    float y;
+  }centru;
+  float raza;
+}c;
+
+3.
+   for(int i=0;i<7;i++)
+        for(int j=0;j<7;j++)
+    { if (i==j)
+         m[i][j]='a';
+    else
+      if (i<j)
+         m[i][j]=m[i][j-1]+1;
+       else
+         m[i][j]='+';
+    }
+
+
+
