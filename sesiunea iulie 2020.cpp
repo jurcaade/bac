@@ -92,3 +92,27 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+   char s[101];
+   cin.getline(s,101);
+   int n=strlen(s), ok=0;
+ 
+     for (int i=0;i<n;i++)
+      {   
+        if (ok==1 && s[i]>='a' && s[i]<='z')
+        s[i]=s[i]-32;
+        
+        if (s[i]=='<')
+            ok=1;
+        if (s[i]=='>')
+            ok=0;
+      }
+      cout<<s;
+        
+}
