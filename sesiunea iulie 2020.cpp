@@ -116,3 +116,34 @@ int main() {
       cout<<s;
         
 }
+
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,pre1=0,pre2=0, d=0, dmin=1000, maxi=0;
+    while (cin>>x)
+    {
+     
+        if (pre2>pre1 && pre2>x)
+     { 
+         
+         d=abs(pre1-x);
+     
+        if (d<dmin)
+        dmin=d;
+        
+        if (d==dmin)
+            if (pre2>maxi)
+            maxi=pre2;
+  
+       } 
+       
+        pre1=pre2;
+        pre2=x;
+        
+    }
+    cout<<maxi<<" ";
+    return 0;
+}
