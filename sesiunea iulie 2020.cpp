@@ -66,5 +66,29 @@ d.
          m[i][j]='+';
     }
 
+sub 3
+  1.
+  #include <iostream>
+#include <math.h>
 
+using namespace std;
+int multiplu (int n)
+{
+    int ok=0,k=1;
+   while (ok==0)
+   {
+       
+       n=n*k;
+       if ((int)sqrt(n)==sqrt(n))
+       ok=1;
+       k++;
+   }
+   return n;
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<multiplu(n);
+    return 0;
+}
 
