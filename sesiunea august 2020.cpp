@@ -103,7 +103,7 @@ int main() {
 
 sub 3
     1.
-    #include <iostream>
+       #include <iostream>
 
 using namespace std;
 
@@ -111,17 +111,22 @@ int kpn (int a, int b, int k)
 {
     int nr=0,s=0,i;
     
-    while (nr<k)
+
     for (i=a;i<=b;i++)
     {   s=0;
         for (int d=1;d<=i;d++)
             if (i%d==0)
             s+=d;
-        
+            
+   
         if (s%2==i%2)
         nr++;
-         
- }
+        
+        if (nr==k)
+        break;
+     }  
+
+ 
     return i;
 }
 
@@ -130,10 +135,12 @@ int kpn (int a, int b, int k)
 int main() {
     int a,b,k;
     cin>>a>>b>>k;
-   cout<<kpn(a,b,k);
+ cout<<kpn(a,b,k);
     
     return 0;
 }
+
+2.
     
     
     
