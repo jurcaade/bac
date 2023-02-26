@@ -187,16 +187,19 @@ int main() {
 using namespace std;
 
 int main() {
-    int x,maxi=0,ok=0;
+    int x,maxi=0,mini=99,ok=0;
     while (cin>>x)
     {
         if (x>9 && x<100)
      {   if (x>maxi)
         maxi=x;
+        if (x<mini)
+        mini=x;
+        
         ok=1;
     }
     }
-    int a=9, b=maxi+1;
+    int a=mini-1, b=maxi+1;
     if (ok==0)
     cout<<"nu exista";
     else
