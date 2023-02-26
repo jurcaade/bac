@@ -141,7 +141,43 @@ int main() {
 }
 
 2.
+    #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101],*p,aux,n,ok=0,t[101]={};
+    cin.getline(s,101);
+    p=strtok(s," ");
     
+    while (p!=NULL)
+    {
+        n=strlen(p);
+        
+        for (int i=0;i<n/2;i++)
+            if (n%2!=0)
+                if (p[i]!=p[n-i-1])
+                {
+                    aux=p[i];
+                  p[i]=p[n-i-1];
+                  p[n-i-1]=aux;
+                  
+                  ok=1;
+               
+                } 
+           strcat(t,p);
+           strcat(t," ");
+        p=strtok(NULL," ");
+    }
+    
+    if (ok==0)
+    cout<<"nu exista";
+    else
+   cout<<t;
+   
+    return 0;
+}
     
     
     
