@@ -132,5 +132,41 @@ int main() {
     return 0;
 }
 
+3.#include <iostream>
 
+using namespace std;
+
+int main() {
+    int x,y,p=1,pre,n;
+    cin>>x>>y;
+    cout<<y<<" "<<x<<" ";
+    pre=x;
+    
+    n=(y-x)/2-1;
+    
+   for (int i=n;i>=1;i--)
+ {   p=pre-2*i;
+    pre=p;
+    cout<<p<<" ";
+}
+    
+    return 0;
+}
+
+Algoritmul este eficient dpdv al spatiului de memorie deoarece utlizeaza 4 variabile simple de tip intreg.
+  Algoritmul este eficient dpdv al timpului de executie deoarece prezinta o complexitate O(n) unde n este nr elem din fisier.
+  Algoritmul afiseaza numerele date in ordine inversa, si retine penultimul termen. Apoi afla pozitia pe care urmeaza sa fie pus
+  umatorul numar. Se parcurg pozitiile ramase pana la 1, si se formeaza termenii cu formula data si se retine termenul precedent.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
