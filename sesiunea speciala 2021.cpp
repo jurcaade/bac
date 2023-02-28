@@ -62,7 +62,44 @@ d.
 tip 2021
 tip b!a!c!
   
+sub 3
+  1. #include <iostream>
 
+using namespace std;
+
+int imog(int x, int y, int &rez)
+{
+    int og=0,s=0, p=1;
+    while (x>0)
+    {
+        if (x%10%2!=0)
+        og=og*10+x%10;
+        x/=10;
+    }
+    
+    while (y>0)
+    {
+        if (y%10%2!=0)
+     {   s=s+y%10*p;
+        p*=10;
+    }
+        y/=10;
+    }
+    
+    if (og==s)
+    rez=1;
+    else
+    rez=0;
+    
+    return rez;
+}
+int main() {
+    int x,y,rez;
+    cin>>x>>y;
+    
+    cout<<imog(x,y,rez);
+    return 0;
+}
 
 
 
