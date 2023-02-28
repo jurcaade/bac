@@ -69,7 +69,6 @@ a[0].venit=4000;
 sub 3
   1.
   #include <iostream>
-#include <math.h>
 using namespace std;
 
 void cuburi (int n)
