@@ -50,3 +50,23 @@ d.
 └■
 ┌dacă ok=0 atunci scrie 0
 └■
+
+2. s=ROMANIA
+     0123456
+  
+I=6  ROMANIA
+ J=3 I=3 ROMANIA
+ J=2 I=1 RAMONIA
+ J=1 I=0 ARMONIA
+ J=0 I=0 ARMONIA
+tip ARMONIA
+
+3.
+a[0].dp.anNastere=2000;
+a[0].venit=4000;
+
+
+
+
+
+
