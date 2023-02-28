@@ -120,3 +120,32 @@ int main() {
     return 0;
 }
 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int na,nb,A[101],B[101],x,nr=0;
+    cin>>na>>nb;
+    for (int i=1;i<=na;i++)
+ {   cin>>x;
+     A[i]=x;
+}
+    for (int j=1;j<=nb;j++)
+ {      cin>>x;
+     B[j]=x;
+}
+
+        
+        for (int i=1;i<=na;i++)
+       for (int j=1;j<=nb;j++)
+    {   if ((A[i]%100==B[j]%100) || ((A[i]%100)==(B[j]%10*10+B[j]/10%10)))
+      nr++;
+}
+cout<<nr;
+    return 0;
+}
+Algortimul este eficient din punct de vedere al timpului de executie deoarece are o complecotate O(n), unde n este nr elem din fisier,
+Alforitmul memoreaza cele doua siruri in doi vectori. Apoi parcurge vectorii si verfica daca ultimele doua cifre ale unui numar sunt egale fie
+cu ultimele doua cifre ale altui numar fie cu oglinditul ultimelor doua cifre ale acestuia, si numara acesti termeni ce corespund proprietatii.
