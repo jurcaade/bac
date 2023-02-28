@@ -101,7 +101,36 @@ int main() {
     return 0;
 }
 
+2.#include <iostream>
 
+using namespace std;
+
+int main() {
+    int a[21][21],n,k,aux,i;
+    cin>>n>>k;
+    
+    for (int i=1;i<=n;i++)
+      for (int j=1;j<=n;j++)
+        cin>>a[i][j];
+    
+    
+    
+   for(int i=1;i<=k;i++)
+
+   {
+       aux=a[k][i];
+       a[k][i]=a[i][k];
+       a[i][k]=aux;
+   }
+    
+    for (int i=1;i<=n;i++)
+ {     for (int j=1;j<=n;j++)
+      cout<<a[i][j]<<" ";
+      cout<<endl;
+}
+    
+    return 0;
+}
 
 
 
