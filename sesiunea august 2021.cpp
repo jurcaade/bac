@@ -66,7 +66,29 @@ a[0].dp.anNastere=2000;
 a[0].venit=4000;
 
 
+sub 3
+  1.
+  #include <iostream>
+#include <math.h>
+using namespace std;
 
+void cuburi (int n)
+{
+    while (n>0)
+    {
+        cout<<n*n*n<<" ";
+        n--;
+        
+    }
+}
+
+
+int main() {
+    int n;
+    cin>>n;
+    cuburi(n);
+    return 0;
+}
 
 
 
