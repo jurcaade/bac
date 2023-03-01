@@ -91,8 +91,8 @@ int main() {
         
         int aux;
         
-    for (int i=0;i<6;i++)
-    for (int j=i+1;j<4;j++)
+    for (int i=0;i<5;i++)
+    for (int j=i+1;j<6;j++)
     {
         if (a[i][2]%2==0 && a[j][2]%2==0)
             if (a[i][2]>a[j][2])
