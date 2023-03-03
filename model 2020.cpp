@@ -134,7 +134,30 @@ int main() {
     return 0;
 }
 
-
+3.
+  #include <iostream>
+    
+    using namespace std;
+    
+    int main() {
+        int x,n,nr=0,pre=0;
+        cin>>n;
+        
+        while (cin>>x)
+        {
+            
+            
+            for (int i=1;i<=n;i++)
+            if (x==i && x!=pre)
+            nr++;
+            
+            pre=x;
+            
+          
+        }
+        cout<<n-nr;
+        return 0;
+    }
       
 
 
