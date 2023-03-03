@@ -50,3 +50,27 @@ d. citește m,n,x
 │ nn-pn
 └cat timp m<=n
  scrie s
+
+2. struct parcare
+{
+  unsigned int id,numar,pret;
+}p[20];
+
+3. for (i=0;i<5;i++)
+    if ((a[i][0]==2020) || (a[i][6]==2020))
+      cout<<i<<" ";
+
+sub 3
+  1.
+
+
+
+
+
+      
+
+
+
+
+
+
