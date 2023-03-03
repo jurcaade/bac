@@ -99,7 +99,40 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+#include <cstring>
 
+using namespace std;
+
+int main() {
+   char s[101], *p, t[101];
+   int n;
+   cin>>n;
+   cin.getline(s,101);
+   p=strtok(s," ");
+   
+   while (p!=NULL)
+   {
+       
+       if (strlen(p)>=5)
+       cout<<p<<endl;
+       else
+   {    strcat(t, p);
+       strcat(t, " ");
+   }
+       
+       p=strtok(NULL," ");
+   }
+   
+  for (int i=0;i<strlen(t);i++)
+ {  cout<<t[i];
+   if (t[i]==' ')
+   cout<<endl;
+}
+
+    return 0;
+}
 
 
       
