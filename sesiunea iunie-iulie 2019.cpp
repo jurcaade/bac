@@ -136,3 +136,33 @@ int main() {
     cout<<"NU";
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,maxi=0,pre,pvf=0,p=1;
+    while (cin>>x)
+    {
+            if (x>maxi)
+         {   maxi=x;
+            pvf=p;
+            cout<<maxi<<" ";
+         }
+         
+        else if (x==maxi && pre==x && pvf==p-1)
+         {    
+            maxi=x;
+            pvf=p;
+            cout<<maxi<<" ";
+        }
+    p++;
+    pre=x;
+    }
+    return 0;
+}
+  
+  
+  
