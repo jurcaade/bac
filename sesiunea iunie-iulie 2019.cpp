@@ -55,3 +55,19 @@ int main() {
     cout<<s;
     return 0;
 }
+
+d.
+  citeşte m,n,p,q
+ (numere naturale nenule, p≤q)
+ s10; s20
+┌pentru i<-p,q execută
+│┌dacă p%m=0 sau p%n=0 atunci
+││ s1s1+1
+│└■
+│┌dacă p%m=0 şi p%n=0 atunci
+││ s2s2+1
+│└■
+│ 
+└■
+ ss1-2*s2
+ scrie s
