@@ -81,6 +81,34 @@ d.
   fig.centru.x=0;
   fig.centru.y=0;
    
+   sub 3
+     1.
+     #include <iostream>
+
+using namespace std;
+
+void Impare(int &n)
+{
+    int s=0,p=1;
+    while (n>0)
+    {
+        if (n%10%2!=0)
+        s=s+(n%10-1)*p;
+        else
+        s=s+n%10*p;
    
+    p*=10;
+    n/=10;
+    }
+    n=s;
+   
+}
+int main() {
+    int n;
+    cin>>n;
+    Impare(n);
+    cout<<n;
+    return 0;
+}
    
    
