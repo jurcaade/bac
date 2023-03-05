@@ -111,4 +111,28 @@ int main() {
     return 0;
 }
    
-   
+   2.
+     #include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int m,n,a[22][22], nr=0;
+    
+    cin>>m>>n;
+    for(int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+    for(int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+    if (a[i][j]==a[i][n+1-j])
+    nr++;
+    
+    if (nr==n*m)
+    cout<<"DA";
+    else
+    cout<<"NU";
+    return 0;
+}
