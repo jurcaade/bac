@@ -1,1 +1,36 @@
+sub 1
+  1. b
+  2. f(75,30)
+  tip 75 f(45,30)---- tip 45 f(15,30)
+  f(15,30)--- tip 15 i=45 j=15 i=30
+  f(15,15) tip 15 ---c
+  3.  a
+  4.  d
+  5.  d
+  
+  sub 2
+  1. n=27102
+  m=1227
+  
+  b.11,101
+  c. #include <iostream>
 
+using namespace std;
+
+int main() {
+    int n,m,x,cp;
+    cin>>n;
+    m=0; x=1;
+    while (x<=9)
+    {
+        cp=n;
+        while (cp!=0)
+    {        if (cp%10==x)
+            m=m*10+x;
+        
+        cp/=10;
+    }
+    x++;
+    }
+    cout<<m;
+}
