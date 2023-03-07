@@ -200,3 +200,48 @@ int main() {
 /*Algoritmul citeste numerele din fisier, pe cele pare le retine in vectorul nrp iar pe cele impare in vectorul nri. Are loc sortarea
 pe rand a celor doi vectori, mai intai sunt sortate crescator numerele pare iar mai apoi cele impare. La final se afiseaza vectorul
 de numere impare sortat crescator iar mai apoi cel de numere pare sortat crescator. */
+
+cu vector de frecventa:
+#include    <iostream>
+#include    <fstream>
+
+using namespace std;
+
+ifstream fin("bac.txt");
+
+int impare[1001];
+int pare[1001];
+
+int main()
+{
+    int n;
+    int maxImp = -1, maxPar = -1;
+    while(fin >> n)
+    {
+        if(n % 2 == 0)
+        {
+            if(n > maxPar)
+                maxPar = n;
+            pare[n]++;
+        }
+        else
+        {
+            if(n > maxImp)
+                maxImp = n;
+            impare[n]++;
+        }
+    }
+
+    for(int i = 1; i <= maxImp; i++)
+    {
+        for(int ap = 1; ap <= impare[i]; ap++)
+            cout << i << " ";
+    }
+    
+    for(int i = 0; i <= maxPar; i++)
+    {
+        for(int ap = 1; ap <= pare[i]; ap++)
+            cout << i << " ";
+    }
+    return 0;
+}
