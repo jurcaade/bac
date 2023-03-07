@@ -125,4 +125,32 @@ int main() {
      
     return 0;
 }
- 
+ 2.
+   #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,a[21][21],x,stop=0,m;
+    cin>>n;
+    for (int i=0;i<n;i++)
+    for (int j=0;j<n;j++)
+    cin>>a[i][j];
+    
+    x=a[0][0];
+    for (int m=2;m<=n;m++)
+     {   
+         for (int i=0;i<m;i++)
+        if (a[i][m-1]!=x)
+        stop=m-1;
+        
+          for (int j=0;j<m;j++)
+        if (a[m-1][j]!=x)
+        stop=m-1;
+        
+        if (stop!=0)
+        break;
+}
+cout<<stop;
+    return 0;
+}
