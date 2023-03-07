@@ -154,3 +154,49 @@ int main() {
 cout<<stop;
     return 0;
 }
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,nri[1001],nrp[1001],i=1,j=1,ni=0,np=0;
+    while (cin>>x)
+    {
+        if (x%2==0)
+        nrp[i++]=x;
+        else
+        nri[j++]=x;
+    }
+    ni=j-1; np=i-1;
+    
+    int aux;
+    
+   for (i=1;i<=np-1;i++)
+    for (j=i+1;j<=np;j++)
+        if (nrp[i]>nrp[j])
+       {  aux=nrp[i];
+         nrp[i]=nrp[j];
+        nrp[j]=aux;
+    }
+ 
+    for (i=1;i<=ni-1;i++)
+    for (j=i+1;j<=ni;j++)
+        if (nri[i]>nri[j])
+       {  aux=nri[i];
+         nri[i]=nri[j];
+        nri[j]=aux;
+    } 
+    
+    for (j=1;j<=ni;j++)
+    cout<<nri[j]<<" ";
+  
+    for (i=1;i<=np;i++)
+    cout<<nrp[i]<<" ";
+    
+ 
+    return 0;
+}
+/*Algoritmul citeste numerele din fisier, pe cele pare le retine in vectorul nrp iar pe cele impare in vectorul nri. Are loc sortarea
+pe rand a celor doi vectori, mai intai sunt sortate crescator numerele pare iar mai apoi cele impare. La final se afiseaza vectorul
+de numere impare sortat crescator iar mai apoi cel de numere pare sortat crescator. */
