@@ -34,3 +34,18 @@ int main() {
     }
     cout<<m;
 }
+
+d.citeşte n
+ (număr natural)
+ m0; 
+┌pentru x<-1,9 execută
+│ cpn
+│┌cât timp cp≠0 execută
+││┌dacă cp%10=x atunci
+│││ mm*10+x
+││└■
+││ cp[cp/10]
+│└■
+│ 
+└■
+ scrie m
