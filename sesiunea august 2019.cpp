@@ -63,6 +63,37 @@ else
 else
   cout<<0;
  
- 
+ sub 3
+   1.
+   #include <iostream>
+
+using namespace std;
+int MaxImp (int a, int b)
+{
+    int p=1, maxi=0, ok=0;
+    
+    for (int i=a;i<=b;i++)
+    {  p=1;
+        for (int d=1;d<=i/2;d++)
+         if (i%d==0 && d%2!=0)
+             {    
+                p=p*d;
+                 ok=1;
+            }
+     if (p>i)
+     maxi=i;
+    }
+    
+  if (ok==0)
+    return 0;
+    else
+    return maxi;
+}
+int main() {
+    int a, b;
+    cin >> a >> b;
+  cout<<MaxImp(a,b);
+    return 0;
+}
  
  
