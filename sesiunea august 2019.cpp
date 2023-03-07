@@ -57,7 +57,11 @@ d.citeşte n
 else
   strcpy(a,b+n);
  
- 
+
+ 3. if (p.x==c.centru.x && p.y==c.centru.y)
+   cout<<1;
+else
+  cout<<0;
  
  
  
