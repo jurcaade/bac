@@ -49,3 +49,16 @@ d.citeşte n
 │ 
 └■
  scrie m
+ 
+ 2. int n=strlen(b)-3;
+
+ if (strlen(b)<3)
+   strcpy(a,"nedeterminat");
+else
+  strcpy(a,b+n);
+ 
+ 
+ 
+ 
+ 
+ 
