@@ -95,5 +95,34 @@ int main() {
   cout<<MaxImp(a,b);
     return 0;
 }
- 
+ #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,a[21][21],mini=1000,x=0,pre=0,nr=0;
+    cin>>n;
+    for (int i=1;i<=n;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+    for (int i=1;i<=n;i++)
+  {  x=1;
+      for (int j=1;j<=n-1;j++)
+         if (a[i][j]==a[i][j+1])
+         x++;
+         
+   
+     if (x<mini && x>1)
+     mini=x;
+     
+    
+    
+  }
+  cout<<mini;
+
+    
+     
+    return 0;
+}
  
