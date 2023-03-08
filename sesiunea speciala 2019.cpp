@@ -8,3 +8,6 @@ sub 1
   sub 2
   a. 4
   b. 45 46 47 48 49
+
+  2.
+  d.luna < e.dev.luna || (d.luna == e.dev.luna && d.zi < e.dev.zi)
