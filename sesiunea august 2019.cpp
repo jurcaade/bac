@@ -245,3 +245,25 @@ int main()
     }
     return 0;
 }
+
+varianta buna
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+    ifstream f("bac.txt");
+    int v[1001]={},x,i,j;
+    while(f>>x)
+        v[x]++;
+    for(i=1;i<=1000;i+=2)///parcurg toate valorile impare posib
+        for(j=0;j<v[i];j++)
+          cout<<i<<" ";
+
+      for(i=0;i<=1000;i+=2)///parcurg toate valorile pare posib
+        for(j=0;j<v[i];j++)
+          cout<<i<<" ";
+}
+eficienta O(n)
