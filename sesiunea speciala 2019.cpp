@@ -52,3 +52,31 @@ int main() {
    cout<<Egal(n);
     return 0;
 }
+
+2.
+  #include <iostream>
+#include <cstring>
+
+
+using namespace std;
+
+int main() {
+   char s[101],*p;
+   int n,ok=0;
+   cin.getline(s,101);
+   cin>>n;
+   p=strtok(s," ");
+   
+   while (p!=NULL)
+   {
+       if (strlen(p)==n)
+    {   cout<<p<<endl;
+       ok=1;
+   }
+       p=strtok(NULL," ");
+   }
+   
+   if (ok==0)
+   cout<<"nu exista";
+    return 0;
+}
