@@ -56,3 +56,45 @@ d. citeşte a,b,k
 │ 
 └■
  scrie y
+
+2. struct eveniment
+{
+  unsigned int id;
+  struct
+  {
+    unsigned int luna;
+    unsigned int zi; 
+  }data;
+  
+}e;
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[6][6],i,j;
+    
+    for(i=0;i<5;i++)
+        for(j=0;j<5;j++)
+ {      a[0][0]=0;
+        if (j==0)
+        a[i][j]=a[i-1][j]+2;
+        else
+        a[i][j]=a[i][j-1]+1;
+}
+        
+        for(i=0;i<5;i++)
+ {       for(j=0;j<5;j++)
+        cout<<a[i][j]<<" ";
+        cout<<endl;
+}
+        
+    return 0;
+}
+
+
+
+
+
