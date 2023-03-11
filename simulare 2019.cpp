@@ -126,7 +126,80 @@ int main() {
     return 0;
 }
   
-  
+  2.
+    #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[51],m[4][51]={"COLEGIUL", "LICEUL", "NATIONAL", "TEORETIC"},*p;
+    int ok=0;
+    
+    cin.getline(s,51);
+    p=strtok(s," ");
+    
+ 
+        while (p!=NULL)
+        {
+            ok=0;
+           for (int j=0;j<strlen(p);j++)
+                if (p[j]=='.')
+              ok=1;
+             
+          if (ok==1)      
+         {   for (int i=0;i<4;i++)
+              if (p[0]==m[i][0])
+            cout<<m[i]<<" ";
+        }
+           else
+             cout<<p<<" ";
+            
+            
+           p=strtok(NULL," ");
+          
+        }
+    return 0;
+}
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,x,p1=0,i1=0,p2=1000,i2=1000;
+    cin>>n;
+    for (int i=1;i<=n;i++)
+    {
+        cin>>x;
+        if (x%2==0)
+         if (x>p1)
+         p1=x;
+        if (x%2!=0)
+         if (x>i1)
+         i1=x;
+    }
+    for (int i=1;i<=n;i++)
+    {
+        cin>>x;
+        if (x%2==0)
+         if (x<p2)
+         p2=x;
+        if (x%2!=0)
+         if (x<i2)
+         i2=x;
+    }
+    
+    if (p1<i2 && i1<p2)
+    cout<<"DA";
+    else
+    cout<<"NU";
+    return 0;
+}
+Algoritmul parcurge primii n termeni si afla cel mai mare numar par si cel mai mare numar impar dintre acestea. Mai apoi algoritmul
+parcurge ultimii n termeni ai sirului si afla cel mai mic numar par respectiv impar. In final se compara maximele dintre primii n termeni
+cu minimele dintre ultimii 5 termeni prin compararea lor cu paritatea diferita.
   
   
   
