@@ -94,7 +94,43 @@ int main() {
     return 0;
 }
 
+sub 3
+ 1.
+  #include <iostream>
+#include <math.h>
 
+using namespace std;
+
+void inserare(int &n)
+{
+    int x=0,p=1,pre=0,y=0,d=0;
+     while (n>0)
+    {
+        pre=y;
+       y=n%10;
+       d=pre-y;
+       
+        x=x+n%10*p+(abs(d)*p/10);
+        p*=100;
+     
+        n/=10;
+    }
+    n=x;
+}
+
+int main() {
+    int n;
+    cin>>n;
+   inserare(n);
+    cout<<n;
+    return 0;
+}
+  
+  
+  
+  
+  
+  
 
 
 
