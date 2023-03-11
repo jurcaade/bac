@@ -80,3 +80,25 @@ int main() {
    cout<<"nu exista";
     return 0;
 }
+
+sub 3
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,x,y,z;
+    cin>>n>>x>>y>>z;
+    
+       while(n>1)
+    {
+        if(n%2==0)
+            cout<<((n-2)/2)*z-((n-2)/2)*x+y<<" ";
+        else
+            cout<<(((n-2)/2)+1)*z-((n-2)/2)*x<<" ";
+        n--;
+    }
+    cout<<1;
+
+    return 0;
+}
