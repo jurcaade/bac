@@ -92,5 +92,24 @@ int main() {
     return 0;
 }
   
-  
+  2.#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[51];
+    cin.getline(s,51);
     
+    for (int i=0;i<strlen(s);i++)
+    if (!strchr("aeiou",s[i]))
+     while (!strchr("aeiou",s[i]))
+        s[i]-=1;
+        
+        
+        cout<<s;
+    return 0;
+}
+    
+
+3.
