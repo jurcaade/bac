@@ -112,4 +112,37 @@ int main() {
 }
     
 
-3.
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,l1=1,lmax=0,pre,nr=0;
+    while (cin>>x)
+    {
+       
+        
+        
+        if (x%2==pre%2)
+            l1++;
+            else
+       {   if (l1>lmax)
+          lmax=l1;
+          l1=1;
+    }
+        
+    
+        if (l1==lmax)
+        nr++;
+        
+        pre=x;
+        
+    }
+    if (l1>lmax)
+   {     lmax=l1;
+        nr=1;
+}
+    
+    cout<<nr<<" "<<lmax;
+    return 0;
+}
