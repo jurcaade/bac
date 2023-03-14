@@ -63,7 +63,34 @@ scrie n+1
                 cout<<"NORMAL";
 
   
-  
+  sub 3
+    1. #include <iostream>
+
+using namespace std;
+void schimb (int &n, int x, int p)
+{
+    int nr=0,p1=1,s=0;
+    while (n>0)
+    {
+        nr++;
+        
+        if (nr-1!=p)
+        s=s+n%10*p1;
+        else
+        s=s+x*p1;
+        
+        p1*=10;
+        n/=10;
+    }
+   n=s;
+}
+int main() {
+    int n,x,p;
+    cin>>n>>x>>p;
+    schimb(n,x,p);
+    cout<<n;
+    return 0;
+}
   
   
     
