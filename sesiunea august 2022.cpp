@@ -1,6 +1,6 @@
 sub 1.
   1.b
-  2.d
+  2.a
   3.d
   4.i+j=n-1
     i=n-1-j
@@ -54,6 +54,14 @@ d.citeşte m,n
 └■
 scrie n+1
   
+  2. 2,8
+  3. if (x.temperatura>11)
+    cout<<"CALDUROS";
+        else if (x.temperatura<10)
+          cout<<"RACOROS";
+              else
+                cout<<"NORMAL";
+
   
   
   
