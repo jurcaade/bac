@@ -142,6 +142,89 @@ int main() {
 }
   
   
-  
+  2.#include <iostream>
+
+using namespace std;
+
+int main() {
+   int n,m,elmin=1000000,elmax=0,lm,cm,lM,cM,a[100][100];
+   cin>>n>>m;
+   for (int i=1;i<=m;i++)
+   for (int j=1;j<=n;j++)
+  { cin>>a[i][j];
+    if (a[i][j]<elmin)
+  { elmin=a[i][j];
+   lm=i;
+   cm=j;
+  }
+   if (a[i][j]>elmax)
+  { elmax=a[i][j];
+   lM=i;
+   cM=j;
+  }
+}
+
+if (lm==lM)
+ for (int i=lm+1;i<=n;i++)
+ {   for (int j=1;j<=n;j++)
+   a[i-1][j]=a[i][j];
+     n--;
+ }
+}
+else
+{
+     for (int i=lm+1;i<=n;i++)
+ {  for (int j=1;j<=n;j++)
+   a[i-1][j]=a[i][j];
+     n--;
+}
+
+    if (lM>lm)
+    lM--;
+    for (int i=lM+1;i<=n;i++)
+  {  for (int j=1;j<=n;j++)
+    a[i-1][j]=a[i][j];
+    n--;
+  }
+    
+}
+
+if (cm==cM)
+ for (int j=cm+1;j<=n;j++)
+ {   for (int i=1;i<=m;i++)
+   a[i][j-1]=a[i][j];
+     m--;
+ }
+else
+{
+     for (int j=cm+1;j<=n;j++)
+ {   for (int i=1;i<=m;i++)
+   a[i][j-1]=a[i][j];
+     m--;
+}
+
+    if (cM>cm)
+    cM--;
+    for (int i=lM+1;i<=n;i++)
+  {  for (int j=1;j<=n;j++)
+    a[i-1][j]=a[i][j];
+    n--;
+  }
+    
+}
+
+
+
+
+
+    for (int i=1;i<=m;i++)
+ {  for (int j=1;j<=n;j++)
+   cout<<a[i][j]<<" ";
+   cout<<endl;
+}
+
+   
+    return 0;
+}
   
   
