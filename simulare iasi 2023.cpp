@@ -258,12 +258,14 @@ int main() {
          {   
             t=pre1*p+pre2;
             p*=10;
+           
+           i++;
         }  
             pre2=pre1;
             pre1=t;
           
-          if (i>3)
-          i++;
+          
+         
         }
        
         if (t==y)
