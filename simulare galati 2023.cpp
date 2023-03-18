@@ -69,7 +69,60 @@ s2=pomelopa
 s2[6]=\0 => s2=pomelo
 tip pomelopa pomelo
 
+sub 3
+  #include <iostream>
 
+using namespace std;
+
+void inserare(int &n)
+{ int nr1=0,nr2=0,s=0,p=1,x,maxi=0,pre=0;
+  
+   while (n>0)
+   {
+       nr1=0;
+       nr2=0;
+       x=n%10;
+       
+     for (int d=1;d<=x;d++)
+        if (x%d==0)
+        nr1++;
+        
+        for (int d=1;d<=pre;d++)
+        if (pre%d==0)
+        nr2++;
+   
+        
+        
+    if (nr1==2 && nr2==2)
+    {
+       
+    if (pre>x)
+    maxi=pre;
+    else
+    maxi=x;
+    
+    
+     p*=100;
+    s=s+x*p+maxi*(p/10);
+   
+   }
+   else
+  { p*=10;
+    s=s+x*p;
+   
+   }
+  pre=x; 
+  n/=10;
+   }  
+   
+   cout<<s/10;
+}
+int main() {
+   int n;
+   cin>>n;
+   inserare(n);
+    return 0;
+}
 
 
 
