@@ -226,5 +226,56 @@ else
    
     return 0;
 }
+
+3.
+  #include <iostream>
+ #include <fstream>
+using namespace std;
+
+int main() {
+    int x,i=1,pre1,pre2,t=0,p=1,k,y;
+    cin>>x>>k>>y;
+  fstream cin("bac.in",ios::in);
+
+     
+  while(i<=k+1)
+    {
+        if (i==1 || i==2)
+        {
+           if (i==1){
+            t=x; pre2=x;}
+           else{
+            t=x+1; pre1=t; }
+        }
+        else
+        {
+         if (i==3)
+         {
+            t=pre1*10+pre2;
+            p*=10;
+        }
+         else
+         {   
+            t=pre1*p+pre2;
+            p*=10;
+        }  
+            pre2=pre1;
+            pre1=t;
+          
+          if (i>3)
+          i++;
+        }
+       
+        if (t==y)
+        cout<<pre2<<" ";
+    i++;
+        
+       
+       cin.close();
+       
+    }
+    return 0;
+}
   
-  
+  Algoritmul formeaza primele k+1 numere ce apartin sirului s. In variabilele pre1 repsectiv pre2 memoreaza ultimele 2 elemente din sir,
+cu care formeaza urmatorul termen pe care il creeaza il variabila t.
