@@ -205,7 +205,7 @@ else
 
     if (cM>cm)
     cM--;
-    for (int i=lM+1;i<=n;i++)
+    for (int i=cM+1;i<=n;i++)
   {  for (int j=1;j<=n;j++)
     a[i-1][j]=a[i][j];
     n--;
