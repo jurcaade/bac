@@ -52,3 +52,24 @@ z1
  zz10
 -- sfarsit cat timp
 scrie y
+
+
+2.
+ {vanilie(/), ciocolată(|), fistic, mentă, tiramisu, pepene(/), cafea(|)}
+inainte: vanilie fistic tiramisu cafea
+ (vanilie, mentă, tiramisu, cafea)
+dupa: ciocolata,fistic,menta,tiramisu
+
+3. s1=anvelopa
+s=pomelo
+p=elo-pomelo = 3
+tip 3
+  s1=pomelopa
+s2=pomelopa
+s2[6]=\0 => s2=pomelo
+tip pomelopa pomelo
+
+
+
+
+
