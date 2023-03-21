@@ -279,5 +279,42 @@ int main() {
     return 0;
 }
   
+  
   Algoritmul formeaza primele k+1 numere ce apartin sirului s. In variabilele pre1 repsectiv pre2 memoreaza ultimele 2 elemente din sir,
 cu care formeaza urmatorul termen pe care il creeaza il variabila t.
+  
+  
+  varianta corecta
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    int x,k,a,b,c;
+    char i;
+    cin>>x>>k;
+    if (x<10)
+    a=1;
+    else
+    a=2;
+    if(x<9)
+    b=1;
+    else
+    b=2;
+    
+    while (c<k)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    
+    for (int j=1;j<=a;j++)
+  {  cin>>i;
+    cout<<i;
+}
+    
+    
+    return 0;
+}
