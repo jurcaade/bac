@@ -124,5 +124,39 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
 
+using namespace std;
+
+int main() {
+    int a[101][101],n,k,ok=1;
+    cin>>n>>k;
+   
+     for (int i=1;i<=n;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+     int x=a[k][k];
+    
+   
+    for (int j=k;j<=n-k+1;j++)
+{    if (a[k][j]!=x)
+     ok=0;
+     if (a[n-k+1][j]!=x)
+     ok=0; 
+}
+    for (int i=k;i<=n-k+1;i++)
+{     if (a[i][k]!=x)
+     ok=0;
+     if (a[i][n-k+1]!=x)
+     ok=0;
+}
+
+
+if (ok==1)
+cout<<"Corect";
+else
+cout<<"Incorect";
+    return 0;
+}
 
