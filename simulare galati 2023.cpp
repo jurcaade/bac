@@ -160,3 +160,56 @@ cout<<"Incorect";
     return 0;
 }
 
+3.
+  #include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int v[100],y[100],s[100],m,x,i=1,j=1,n,nc=0,pf,aux,p;
+    while(cin>>x)
+    {
+        if (x>99 && x<1000)
+        v[i++]=x;
+        if (x>999)
+        y[j++]=x;
+        
+    }
+    n=i-1;
+    m=j-1;
+   
+    for (i=1;i<=n;i++)
+    {
+       
+        int nr=0;
+        for (j=1;j<=m;j++)
+        {
+        aux=y[j];
+        nc=0;
+        
+        while (y[j]>0)
+        {
+            y[j]/=10;
+            nc++;
+            
+        }
+        y[j]=aux;
+        pf=y[j]/pow(10,nc-2);
+  
+         if (pf==v[i]/10)
+         {nr++;
+         p=pf;
+        }
+        }
+        
+    
+         if (nr>1)
+        s[p]=1;
+    
+    }
+  for (int p=99;p>=10;p--)
+    if (s[p]==1)
+    cout<<p<<" ";
+  
+    return 0;
+}
