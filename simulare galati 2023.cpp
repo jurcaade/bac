@@ -216,7 +216,7 @@ int main() {
 
 
 var 2
-  #include <iostream>
+ #include <iostream>
 #include <fstream>
 
 using namespace std;
@@ -244,21 +244,26 @@ int main()
         while(pre>99)      //se gaseste prefixul(primele 2 cifre)
             pre/=10;
         if(nrcifre(x)>3)   //daca nr de cifre e mai mare decat 3, se creste vectorul de aparitii pe pozitia prefixului in vM3
-            {vM3[pre]++;
-            if(vM3[pre]>apmax)  //se afla prefixul cu cele mai multe aparitii
-                apmax=vM3[pre];
+            vM3[pre]++;
 
-            }
         if(nrcifre(x)==3)      ////daca nr de cifre e 3, se creste vectorul de aparitii pe pozitia prefixului in ve3
             ve3[pre]++;
     }
     for(i=99;i>=10;i--)
+      {
+        if(ve3[i]>0)
+          if(vM3[i]>apmax)
+            apmax=vM3[i];
+      }
+    for(i=99;i>=10;i--)
+      {
         if(vM3[i]==apmax && ve3[i]>=1)    //se afiseaza descrescator valorile cu aparitii maxime in vM3 si cu cel putin o                                                 aparitie in ve3
         {
             cout<<i<<" ";
             ok=1;
         }
-
+      }
+  
     if(ok==0)       //tratarea cazului nu exista
         cout<<"nu exista";
     return 0;
