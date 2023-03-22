@@ -74,3 +74,62 @@ cin.getline(s,101);
       cout<<s[i];
   else cout<<"nu";
 }
+
+ex 3
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+bool putere(int n)
+{
+  int k=0;
+  while(n!=1){
+    n/=3;
+    k++;
+  }
+
+  if(n!=1) return -1;
+  else return k;
+}
+
+int main()
+{
+  ifstream f("date.txt");
+  int lun=0, lunmax=0,x,v[14]={},e,sol[14]={};
+
+  while(f>>x)
+    {
+      e=putere(x);
+      if(x!=-1)
+      {
+        lun++;
+        v[e]++;
+      }
+      else
+      {
+        if(lun>lunmax)
+        {lunmax=lun;
+         for(int i=0;i<14;i++)
+           {
+             sol[i]=v[i];
+             v[i]=0;
+            }
+        }
+      }
+    }
+  if(lunmax==0)
+    cout<<0<<endl<<"NU EXISTA SECVENTA";
+  else
+  {
+    cout<<lunmax<<endl;
+    for(int i=0;i<14;i++)
+      {
+        if(sol[i]!=0)
+        {
+          for(int j=0;j<sol[i];j++)
+            cout<<pow(3,i)<<" ";
+        }
+      }
+  }
+}
+
