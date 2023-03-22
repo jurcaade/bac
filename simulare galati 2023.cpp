@@ -75,7 +75,7 @@ sub 3
 using namespace std;
 
 void inserare(int &n)
-{ int nr1=0,nr2=0,s=0,p=1,x,maxi=0,pre=0;
+{ int nr1=0,nr2=0,s=0,p=1,x,maxi=0,pre=0,ok=0;
   
    while (n>0)
    {
@@ -101,6 +101,7 @@ void inserare(int &n)
     else
     maxi=x;
     
+      ok=1;
     
      p*=100;
     s=s+x*p+maxi*(p/10);
@@ -114,7 +115,9 @@ void inserare(int &n)
   pre=x; 
   n/=10;
    }  
-   
+   if (ok==1)
+     cout<<0;
+ else
    cout<<s/10;
 }
 int main() {
