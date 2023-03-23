@@ -63,7 +63,15 @@ d. citeşte n (număr întreg)
   scrie [x/nr]
   sfarsit daca
   
- 
+ 2. struct produs
+ {
+   char denumire[31];
+   float pret;
+     struct 
+     {
+     unsigned int zi,luna,an;
+     }datae;
+ }c[100];
 
 sub 3
   ex 1
