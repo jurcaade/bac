@@ -1,3 +1,70 @@
+sub 1
+  1. b
+  2. ex(10542,1821,a)
+  1>2 F
+  a=24811
+  => c
+  3. b
+  4. d
+  5. d
+  
+  sub 2
+  a. nr=13
+  se verifica daca nr e prim
+  tip 13/31=0
+  tip 0
+  
+  b 1
+  c#include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main() {
+    int n,nr,x,ok,j;
+    cin>>n;
+    nr=0;
+    x=n;
+    do
+    {
+        nr=nr*10+n%10;
+        n/=10;
+    }while (n!=0);
+    ok=1;
+    for (j=2;j<sqrt(nr);j++)
+    {
+        if (nr%j==0)
+        ok=0;
+    }
+    if (ok)
+    cout<<nr/x;
+    else
+    cout<<x/nr;
+    return 0;
+}
+d. citeşte n (număr întreg)
+  nr ← 0
+  x←n
+ | cat timp n!=0 executa
+ | nr ← nr*10+ n % 10
+ | n← [n/10]
+ sfarsit cat timp
+ ok ← 1
+  j ← 2
+  cat timp j<=[√nr] execută
+   dacă nr % j=0 atunci
+   ok ← 0
+  sfarsit cat timp
+ 
+  dacă ok atunci
+  scrie [nr/x]
+  altfel
+  scrie [x/nr]
+  sfarsit daca
+  
+ 
+
 sub 3
   ex 1
   #include <iostream>
