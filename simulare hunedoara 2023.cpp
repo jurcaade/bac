@@ -73,6 +73,34 @@ d. citeşte n (număr întreg)
      }datae;
  }c[100];
 
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[101][101], i, j;
+       for(i=1;i<=5;i++)
+        for(j=1;j<=5;j++)
+    {    if (i==j)
+        a[i][j]=1;
+        if (i<j && i%2==0)
+        a[i][j]=1;
+        if (i>j && j%2==i%2)
+        a[i][j]=1;
+}
+        
+        
+        
+        
+         for(i=1;i<=5;i++)
+       { for(j=1;j<=5;j++)
+        cout<<a[i][j]<<" ";
+        cout<<endl;
+}
+        
+    return 0;
+}
+
 sub 3
   ex 1
   #include <iostream>
