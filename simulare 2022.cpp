@@ -116,3 +116,31 @@ int main() {
 }
 
 2.
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[251], *p,x[251], a[251][251];
+    cin.getline (s,251);
+    cin.getline(x,251);
+   int k=0, ok=0;
+    p=strtok(s," ;");
+    
+    while (p!=NULL)
+    {
+        strcpy (a[k],p);
+        k++;
+        p=strtok(NULL," ;"); 
+    }
+
+    for (int i=0;i<k;i+=2)
+    if (strcmp(a[i],x)==0)
+ {   cout<<a[i+1]<<" ";
+      ok=1;
+}
+if (ok==0)
+cout<<"NU";
+    return 0;
+}
