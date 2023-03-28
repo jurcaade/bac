@@ -81,6 +81,7 @@ int main() {
     for (j=0;j<15;j++)
     if (a[0][j]==a[2][j])
     if(a[1][j-1]==a[1][j+1])
+     if (a[0][j]==a[1][j-1])
     ok=1;
 
 
@@ -113,3 +114,5 @@ int main() {
     cout<<k;
     return 0;
 }
+
+2.
