@@ -124,3 +124,24 @@ int main() {
 }
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+int v[101];
+int main() {
+    int x;
+    while (cin>>x)
+    {
+        v[x]++;
+    }
+    
+    int s=0;
+    for (int i=1;i<=10;i++)
+    if (v[i]!=0)
+        s=s+10+i*i*v[i];
+        
+        cout<<s;
+    return 0;
+}
