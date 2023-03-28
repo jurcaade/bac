@@ -86,6 +86,6 @@ int main() {
 
 cout<<ok;
     
-    //cout<<ok;
+    cout<<ok;
     return 0;
 }
