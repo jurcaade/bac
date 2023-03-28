@@ -61,3 +61,31 @@ nr0;
 │ 
 └■
 scrie nr
+
+2. 3,6,1,4 
+ 3. #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char a[101][101];
+    int i,j, ok=0;
+    
+    
+   for (i=0;i<3;i++)
+    for (j=0;j<15;j++)
+    cin>>a[i][j];
+  
+    
+    for (j=0;j<15;j++)
+    if (a[0][j]==a[2][j])
+    if(a[1][j-1]==a[1][j+1])
+    ok=1;
+
+
+cout<<ok;
+    
+    //cout<<ok;
+    return 0;
+}
