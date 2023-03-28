@@ -144,3 +144,31 @@ if (ok==0)
 cout<<"NU";
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,p3=0,p5=0,rez;
+    cin>>n;
+    
+    for (int i=1;i<=n;i++)
+    {
+        int x=i;
+        while (x%3==0)
+     {   x/=3;
+        p3++;
+    }
+    while (x%5==0)
+     {   x/=5;
+        p5++;
+    }
+     }
+    rez=min(p3/2,p5);
+    cout<<rez;
+    
+   
+    return 0;
+}
