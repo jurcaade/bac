@@ -60,3 +60,34 @@ citește x (număr natural)
    s= ELEMENT
    
    sub 3
+1.
+  #include <iostream>
+
+using namespace std;
+int putere (int n)
+{
+    int p=0, minp=1000, mini=1000,d=2;
+   while (n>1)
+    {
+        p=0;
+        while (n%d==0)
+     {   n/=d;
+        p++;
+    }
+    if (p>0)
+     if (p<minp)
+     { 
+        minp=p;
+        mini=d;
+    }
+    d++;
+    
+    }
+    return mini;
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<putere(n);
+    return 0;
+}
