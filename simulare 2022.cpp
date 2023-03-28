@@ -23,7 +23,7 @@ sub 2
           pt 16 nr=2
       pt 187 nr=3
       tip 3
-      b. 223, 225
+      b. 2273, 2235
       c. #include <iostream>
 
 using namespace std;
