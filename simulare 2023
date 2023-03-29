@@ -1,0 +1,39 @@
+sub 2
+2.
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101], b[101][101]={"FAMILIA","GENUL","SPECIA"}, a[101][101], t[101],*p;
+    cin.getline(s,101);
+    p=strtok(s," ");
+    int i=0;
+    while (p!=NULL)
+    {
+        strcpy(a[i++],p);
+        p=strtok(NULL," ");
+    }
+    
+    for (int k=0;k<=i;k++)
+    if (k%2==0)
+    {
+        for (int j=0;j<3;j++)
+        if (a[k][0]==b[j][0])
+        for (int y=0;y<3;y++)
+     {
+         
+         b[j][y]=b[j][y]+32;
+        cout<<b[j][y];
+    }
+
+    cout<<"."<<" ";
+    }
+    else
+    { cout<<a[k]<<" ";
+    }
+   
+
+    return 0;
+}
