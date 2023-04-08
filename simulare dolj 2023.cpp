@@ -83,3 +83,29 @@ int main() {
 }
     return 0;
 }
+
+sub 3.
+  1. #include <iostream>
+using namespace std;
+
+int prefix (int a, int b)
+{
+   
+    for (int i=1;i<=10;i++)
+    {
+        b/=10;
+        if (b==a)
+        return 1;
+    }
+    return 0;
+}
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout<< prefix(a,b);
+    return 0;
+}
+
+
+
+
