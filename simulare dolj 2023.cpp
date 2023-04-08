@@ -60,3 +60,26 @@ scrie k
   cout<<u2;
 else if (u1.g==u2.g)
   cout<<"egale";
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[101][101];
+    
+    for (int i=1;i<=4;i++)
+    for (int j=1;j<=6;j++)
+    if (i%2!=0)
+    a[i][j]=14-2*j;
+    else
+    a[i][j]=2*j;
+    
+    for (int i=1;i<=4;i++)
+ {   for (int j=1;j<=6;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
