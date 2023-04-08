@@ -106,6 +106,38 @@ int main() {
     return 0;
 }
 
+2.#include <iostream>
+#include <cstring>
+using namespace std;
 
+int main() {
+    char s[256], *p;
+    int nr=0;
+    cin.getline(s,256);
+    p=strtok(s," ");
+    
+    while (p!=NULL)
+    {
+        nr=0;
+        for (int i=0;i<strlen(p);i++)
+         if (p[i] >= '0' && p[i] <= '9')
+             nr++;
+             
+             if (nr!=strlen(p))
+           {  for (int i=0;i<strlen(p);i++)
+             if (p[i] < '0' || p[i] > '9')
+                 cout<<p[i];
+             }
+             else
+             cout<<p;
+    
+         cout<<" ";
+         p=strtok(NULL," ");
+         
+    }
+  
+    
+    return 0;
+}
 
 
