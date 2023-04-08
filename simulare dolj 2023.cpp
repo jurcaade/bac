@@ -45,7 +45,6 @@ d.
  pentru i ← a,b execută
  d ← 2
    daca (i%d ≠ 0 și d<=i)
-   d ← d+1
    repeta  
    d ← d+1
    pana cand (i%d = 0 sau d>i)
