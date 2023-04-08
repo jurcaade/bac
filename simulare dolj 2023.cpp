@@ -52,3 +52,11 @@ d.
  k ← k+1
 scrie k
 
+
+2.
+  if ((u1.g>u2.g) || (u1.g==u2.g && u1.m>u2.m))
+  cout<<u1;
+  else
+  cout<<u2;
+else if (u1.g==u2.g)
+  cout<<"egale";
