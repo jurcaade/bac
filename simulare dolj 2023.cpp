@@ -170,4 +170,31 @@ int main() {
     return 0;
 }
 
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    int x, l1=0, lmax=0, p=1, pmax=0,i=0,il;
+    
+   while (cin>>x)
+   {
+       i++;
+       p*=x;
+       if (p>=pmax)
+       {    
+           l1++;
+           pmax=p;
+           il=i-l1+1;
+       }
+       else
+    {  if (l1>lmax)
+       lmax=l1;
+       
+        p=1;
+       l1=0;
+   }
+   }
+   cout<<pmax<<" "<<lmax;
+    return 0;
+}
