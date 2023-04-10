@@ -121,12 +121,13 @@ using namespace std;
 int prefix (int a, int b)
 {
    
-    for (int i=1;i<=10;i++)
+   do
     {
         b/=10;
         if (b==a)
         return 1;
     }
+    while (b>a);
     return 0;
 }
 int main() {
