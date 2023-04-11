@@ -116,5 +116,34 @@ int main() {
     return 0;
 }
 
+2.
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    int a[101][101],n,m,s=0,smax=0,pi,pj;
+    cin>>n>>m;
+    for (int i=1;i<=n;i++)
+    for (int j=1;j<=m;j++)
+    cin>>a[i][j];
+    
+
+    
+  for (int i=1;i<=n;i++)
+    for (int j=1;j<=m;j++)
+      {
+            s=a[i][j]+a[i-1][j]+a[i+1][j]+a[i][j-1]+a[i][j+1];
+            if (s>smax)
+            {
+                smax=s;
+                pi=i;
+                pj=j;
+            }
+    }
+    cout<<pi<<","<<pj;
+    
+    
+    return 0;
+}
 
