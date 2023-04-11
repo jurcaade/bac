@@ -89,7 +89,32 @@ for (int i=1;i<=10;i++)
 b=galben
 x=010011
 
+sub 3
+1.
+#include <iostream>
 
+using namespace std;
+
+void numere_dure(int n)
+{
+    int x=0;
+   
+        for (int i=1;i<=8 ;i++)
+        for (int j=1;j<=8 && n>0;j++)
+        if (i*j>=18)
+     {   cout<<i*10+j<<" ";
+            n--;
+    }
+    
+    
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    numere_dure(n);
+    return 0;
+}
 
 
 
