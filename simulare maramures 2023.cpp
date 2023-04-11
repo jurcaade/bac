@@ -33,3 +33,29 @@ sub 2
  nr=4 pt 5,8,13,2
  b 3 11 4 6
   
+  c.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,nr,x,y,z,aux,i;
+    cin>>n;
+    nr=0;
+    for (i=1;i<=n;i++)
+    {
+        cin>>z;
+        x=1;
+        y=1;
+        while(z>y)
+        {
+            aux=x;
+            x=y;
+            y=aux+y;
+        }
+        if (z==aux+x)
+        nr++;
+    }
+    cout<<nr;
+    return 0;
+}
