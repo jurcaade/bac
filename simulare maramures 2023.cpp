@@ -85,7 +85,9 @@ for (int i=1;i<=10;i++)
     if (ok==0)
     cout<<"nu exista";
     
-
+3. a=albastru
+b=galben
+x=010011
 
 
 
