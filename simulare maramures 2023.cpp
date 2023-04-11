@@ -59,3 +59,19 @@ int main() {
     cout<<nr;
     return 0;
 }
+
+d.
+citeşte n (număr natural nenul)
+nr0
+i=1
+┌cat timp i<=n execută
+│ citeşte z (număr natural nenul)
+│ x1; y1
+│┌cât timp z>y execută
+││auxx; xy; yaux+y
+│└■
+│┌dacă z=aux+x atunci nrnr+1
+│└■
+| i=i+1
+└■
+scrie nr
