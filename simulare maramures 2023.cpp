@@ -147,3 +147,29 @@ int main() {
     return 0;
 }
 
+3.
+#include <iostream>
+
+using namespace std;
+int v[101];
+int main() {
+    int x,ok=1;
+    while (cin>>x)
+    {
+        v[x]++;
+        
+    }
+    
+    for (int i=1;i<=10;i++)
+    if (i!=v[i] && v[i]!=0)
+    ok=0;
+    
+
+    
+    if (ok==1)
+   cout<<"Da";
+    else
+    cout<<"Nu";
+    
+    return 0;
+}
