@@ -79,7 +79,7 @@ scrie nr
 2. int ok=0;
 for (int i=1;i<=10;i++)
     if (v[i].data_lansare.an<2000 && v[i].nume[0]=='A')
-    {cout<<v[i].titlu<<" ";
+    {cout<<v[i].titlul<<" ";
     ok=1;
     }
     if (ok==0)
