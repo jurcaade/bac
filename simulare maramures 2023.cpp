@@ -115,7 +115,30 @@ int main() {
     numere_dure(n);
     return 0;
 }
-
+varianta pt modul general
+void numere_dure(int n)
+{
+  int k=0, x=36, y, c;
+  while(k<n)
+    {
+      y=x;
+      int p=1;
+      while(y!=0)
+        {
+          c=y%10;
+          if(c>=1 && c<=8)
+            p*=c;
+          else p=-1;
+          y/=10;
+        }
+      if(p>=18)
+      {  
+        cout<<x<<" ";
+        k++;
+      }
+      x++;
+    }
+}
 2.
 #include <iostream>
 
