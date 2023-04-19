@@ -200,3 +200,29 @@ int main() {
     
     return 0;
 }
+
+var buna
+{
+int x, ok=1, maxi=0,k=0;
+  while (cin>>x)
+    {
+      k++;
+      v[x]++;
+      if (x>maxi)
+        maxi=x;
+    }
+  if (maxi*(maxi+1)/2 != k){
+    cout<<"Nu";
+    return 0;
+  }
+  for (int i=1;i<=maxi;i++)
+    if (i!=v[i] )
+      ok=0;
+
+  if (ok==1)
+    cout<<"Da";
+  else
+    cout<<"Nu";
+  
+  return 0;
+}
