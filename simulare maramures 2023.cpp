@@ -178,7 +178,7 @@ a[0][j]=a[n+1][j]=0; */
 #include <iostream>
 
 using namespace std;
-int v[101];
+int v[1000];
 int main() {
     int x,ok=1;
     while (cin>>x)
