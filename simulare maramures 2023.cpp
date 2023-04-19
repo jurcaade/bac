@@ -86,8 +86,8 @@ for (int i=1;i<=10;i++)
     cout<<"nu exista";
     
 3. a=albastru
-b=galben
-x=010011
+   b=galben
+   x=010011
 
 sub 3
 1.
