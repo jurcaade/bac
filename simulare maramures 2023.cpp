@@ -187,7 +187,7 @@ int main() {
         
     }
     
-    for (int i=1;i<=10;i++)
+    for (int i=1;i<=999;i++)
     if (i!=v[i] && v[i]!=0)
     ok=0;
     
@@ -201,7 +201,7 @@ int main() {
     return 0;
 }
 
-var buna
+var dif se refera la numere consecutiv in sir
 {
 int x, ok=1, maxi=0,k=0;
   while (cin>>x)
