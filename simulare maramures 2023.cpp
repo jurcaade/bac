@@ -145,12 +145,16 @@ void numere_dure(int n)
 using namespace std;
 
 int main() {
-    int a[101][101],n,m,s=0,smax=0,pi,pj;
+    int a[101][101]={},n,m,s=0,smax=0,pi,pj;
     cin>>n>>m;
     for (int i=1;i<=n;i++)
     for (int j=1;j<=m;j++)
     cin>>a[i][j];
-    
+    //bordare cu 0
+ /*   for (int i=0;i<=n+1;i++)
+a[i][0]=a[i][m+1]=0;
+for (int j=0;j<=m+1;j++)
+a[0][j]=a[n+1][j]=0; */
 
     
   for (int i=1;i<=n;i++)
