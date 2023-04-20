@@ -29,3 +29,29 @@ sub 2
   1 2 3 3 3 4
   
   b 46 55
+  c. #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,k,i;
+    cin>>n;
+    k=1;
+    while (n>=1)
+    {
+        if(n>k)
+        i=k;
+        else
+        i=n;
+        
+        n-=i;
+    
+        while(i>=1)
+      {  cout<<k<<" ";
+        i--;
+    }
+        k++;
+        
+    }
+    return 0;
+}
