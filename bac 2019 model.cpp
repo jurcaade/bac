@@ -69,3 +69,10 @@ citeşte n
 │└pana cand (i<1)
 │ kk+1
 └■
+
+2.
+struct complex
+{
+  float pre;
+  float pim;
+}z[19];
