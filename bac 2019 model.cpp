@@ -76,3 +76,22 @@ struct complex
   float pre;
   float pim;
 }z[19];
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[101][101],i,j;
+        for(i=1;i<=5;i++)
+         for(j=1;j<=5;j++)
+        a[i][j]=i*5+j-5;
+         
+         for(i=1;i<=5;i++)
+    {     for(j=1;j<=5;j++)
+         cout<<a[i][j]<<" ";
+         cout<<endl;
+}
+    return 0;
+}
