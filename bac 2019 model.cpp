@@ -95,3 +95,35 @@ int main() {
 }
     return 0;
 }
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+int CifrePrime(int n)
+{
+    int ok=1,s=0;
+    while (n>0)
+    {
+        int x=n%10;
+        ok=1;
+        
+        for (int d=2;d<x;d++)
+        if (x%d==0)
+        ok=0;
+        
+        if (ok==1 && x!=1)
+          s+=x;
+      
+    
+        
+        n/=10;
+    }
+    return s;
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<CifrePrime(n);
+    return 0;
+}
