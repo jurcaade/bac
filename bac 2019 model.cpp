@@ -55,3 +55,17 @@ int main() {
     }
     return 0;
 }
+d
+citeşte n
+ (număr natural)
+ k1
+┌cât timp n≥1 execută
+│┌dacă n>k atunci ik
+││altfel in
+│└■
+│ nn-i
+│┌repeta 
+││ scrie k,' '; ii-1
+│└pana cand (i<1)
+│ kk+1
+└■
