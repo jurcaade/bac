@@ -75,7 +75,7 @@ struct complex
 {
   float pre;
   float pim;
-}z[19];
+}z[20];
 
 3.
   #include <iostream>
