@@ -174,3 +174,34 @@ int main() {
     
     return 0;
 }
+3.
+  #include <iostream>
+
+using namespace std;
+int v[101];
+int main() {
+    int x,nr=1,nrmax=0;
+    while (cin>>x)
+    {
+        v[x]++;
+        
+    }
+    for (int i=1;i<=100;i++)
+    {
+      if (v[i]!=0 && v[i+1]!=0)
+        nr+=v[i];
+        else
+       {
+            if (nr>nrmax)
+            nrmax=nr;
+           nr=1;
+        }
+        
+    }
+    cout<<nrmax;
+   
+    return 0;
+}
+Algoritmul este eficient dpdv al timpului de executie deoarece are o complexitate O(n) unde n este nr elem din fisier.
+  Algoritmul retine intr un vector de frecventa termenii din fisier si numarul de cate ori apare fiecare. Apoi se parcurg numerele de la 1 la 100 si se
+  verifica daca numarul apartine fisierului in acest caz se aduna frecventa acestuia. Si se verifica daca e maxima
