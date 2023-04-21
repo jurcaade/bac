@@ -127,3 +127,50 @@ int main() {
     cout<<CifrePrime(n);
     return 0;
 }
+
+2.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101], *p, u, a, b;
+    int cuv=0,ok=0, nr=0;
+    cin.getline(s,101);
+    p=strtok(s," ");
+    
+    while (p!=NULL)
+    {
+        cuv++;
+        ok=0;
+        
+        for (int i=0;i<strlen(p);i++)
+      {  if (cuv==1)
+                if (!strchr("aeiou",p[i]) && ok==0)
+              {      a=p[i];
+                    ok=1;
+                    nr++;
+            }
+        if (cuv==2)
+         if (strchr("aeiou",p[i]) && ok==0)
+          {      b=p[i];
+                ok=1;
+                nr++;
+        }
+        u=p[i];
+      }
+        p=strtok(NULL," ");
+    }
+    
+   
+    
+    if (nr!=2)
+    cout<<"nu exista";
+    else
+    cout<<a<<b<<u;
+    
+    
+    
+    return 0;
+}
