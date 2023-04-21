@@ -175,12 +175,12 @@ int main() {
     return 0;
 }
 3.
-  #include <iostream>
+ #include <iostream>
 
 using namespace std;
 int v[101];
 int main() {
-    int x,nr=1,nrmax=0;
+    int x,nr=0,nrmax=0;
     while (cin>>x)
     {
         v[x]++;
@@ -188,13 +188,15 @@ int main() {
     }
     for (int i=1;i<=100;i++)
     {
-      if (v[i]!=0 && v[i+1]!=0)
+        if (v[i]!=0 && v[i+1]!=0)
         nr+=v[i];
         else
        {
+           nr+=v[i];
+        
             if (nr>nrmax)
             nrmax=nr;
-           nr=1;
+           nr=0;
         }
         
     }
