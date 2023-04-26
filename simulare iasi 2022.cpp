@@ -31,3 +31,24 @@ pentru i←1, n execută
   else
      a[i][j]='a'+i; 
 //a[i][j]='A'+(j%2)*32+i;
+
+sub 3 
+  1.
+  void numimp(int n, int v[], int &c)
+{
+  c=0;
+  int i,x,ok;
+  for(i=0;i<n;i++)
+    {   
+      ok=1;
+      x=v[i];
+      while(x!=0)
+        {
+          if(x%10%2!=0)
+            ok=0;
+          x/=10;
+        }
+      if(ok==0)
+        c++;
+    }
+}
