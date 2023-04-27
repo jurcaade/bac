@@ -50,3 +50,15 @@ AMORF
 AMR
 AMRF
 
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[11][11];
+    k=0
+for (i=0; i<=9; i++)
+ if (a[x][i]<0 && i%3==0) k++;
+cout<<k;
+    return 0;
+}
