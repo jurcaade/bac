@@ -93,6 +93,8 @@ int dublu(int n)
     
         aux/=10;
     }
+  else
+    return -1;
    
    return x;
 }
