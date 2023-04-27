@@ -7,7 +7,7 @@ sub 1
 
   sub 2
   1.a 1203
-    b 23432
+    b 231
   c
   #include <iostream>
 
