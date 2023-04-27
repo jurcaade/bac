@@ -62,3 +62,43 @@ for (i=0; i<=9; i++)
 cout<<k;
     return 0;
 }
+
+sub 3
+  1.
+  #include <iostream>
+
+using namespace std;
+
+int dublu(int n)
+{
+    int aux=n, nr=0;
+    while (n!=0)
+    {
+        nr++;
+        n/=10;
+    }
+    int mij=nr/2+1,x=0,p=1;
+    int nr1=0;
+    if (nr%2!=0)
+    while (aux!=0)
+    {
+        nr1++;
+        x=x+aux%10*p;
+        p*=10;
+         
+        if (nr1==mij)
+      {  x=x+aux%10*p;
+        p*=10;
+    } 
+    
+        aux/=10;
+    }
+   
+   return x;
+}
+int main() {
+    int n;
+    cin>>n;
+  cout<<dublu(n);
+    return 0;
+}
