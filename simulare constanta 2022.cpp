@@ -41,3 +41,12 @@ cat timp n>0
  n[n/10]
 
 Scrie m;
+
+2.
+   {F, O, R, M, A}
+   {A, F, M, O, R}
+AMOR
+AMORF
+AMR
+AMRF
+
