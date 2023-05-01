@@ -76,3 +76,39 @@ sub 3
     cout<<"Nu exista";
   return 0;
 }
+
+3.
+  #include <iostream>
+#include <cmath>
+
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int val, valant, fl, maxfl=0, minfl=0;
+    int max1, max2, min1, min2;
+    cin >> valant;
+  
+    for (int i=2;  i<=n; i++)
+    {
+        cin >> val;
+        fl = abs(val-valant);
+        if (fl > maxfl) 
+        {
+            maxfl=fl;
+            max1= i-1;
+            max2= i;
+        } else if (fl == maxfl) {
+            max2 = i;
+        }
+        if (fl < minfl) {
+            minfl = fl;
+            min1 = i - 1;
+            min2 = i;
+        } else if (fl == minfl) {
+            min2 = i;
+        }
+        valant = val;
+    }
