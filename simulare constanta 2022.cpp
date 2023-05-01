@@ -133,3 +133,41 @@ int main() {
    cout<<nr<<" "<<nr2;
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int v[101], n,m,x,aux;
+    cin>>n;
+    for (int i=1;i<=n;i++)
+ {
+     cin>>x;
+    v[i]=x;
+}
+cin>>m;
+for (int i=n+1;i<=m+n;i++)
+{
+     cin>>x;
+    v[i]=x;
+}
+
+
+    for (int i=1;i<=n+m-1;i++)
+    for (int j=i+1;j<=n+m;j++)
+
+        if (v[i]>v[j])
+        {
+            aux=v[i];
+            v[i]=v[j];
+            v[j]=aux;
+        }
+
+ for (int i=1;i<=n+m;i++)
+  if(v[i]%3==0 && v[i]!=v[i-1])
+ cout<<v[i]<<" ";
+
+    return 0;
+}
