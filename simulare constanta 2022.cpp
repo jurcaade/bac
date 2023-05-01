@@ -104,3 +104,32 @@ int main() {
   cout<<dublu(n);
     return 0;
 }
+
+2.
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+   char s[256], *p;
+   cin.getline(s,256);
+   p=strtok(s," ");
+   int nr=0,nr2=0;
+   while (p!=NULL)
+   {
+       int ok=0;
+       for (int i=0;i<strlen(p);i++)
+        if (p[i]>='0' && p[i]<='9')
+    {    ok=1;
+        nr2++;
+   }
+        
+        if (ok==1)
+        nr++;
+        
+       
+       p=strtok(NULL," ");
+   }
+   cout<<nr<<" "<<nr2;
+    return 0;
+}
