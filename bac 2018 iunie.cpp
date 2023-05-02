@@ -149,3 +149,36 @@ int main() {
     cout<<resturi (n,x,y,r);
     return 0;
 }
+4.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int l=2,lmax=0,x,pre1,pre2;
+    cin>>pre1>>pre2;
+    
+    
+    
+    while (cin>>x)
+    {
+       if (pre1!=pre2 && pre1!=x && pre2!=x)
+       l++;
+       else
+       {
+           if (l>lmax)
+           lmax=l;
+       
+           l=2;
+           
+       }
+       pre2=pre1;
+       pre1=x;
+       
+    }
+     if (l>lmax)
+        lmax=l;
+        
+    cout<<lmax;
+    return 0;
+}
