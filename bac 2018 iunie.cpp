@@ -89,3 +89,41 @@ int main() {
     
     return 0;
 }
+5.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+   char s[101],c[101],x[101]={},aux[101]={};
+   cin>>s>>c;
+   
+   int n=strlen(s), n1=strlen(c);
+   
+   if (n!=n1)
+   cout<<"cod incorect";
+   else
+   {
+       x[0]=s[0];
+        for (int i=1;i<n;i++)
+        if (c[i]%2==0)
+        {
+            aux[0]=s[i];
+            aux[1]='\0';
+            strcat(aux,x);
+            strcpy(x,aux);
+        }
+        else
+        {
+            aux[0]=s[i];
+            aux[1]='\0';
+            strcat(x,aux);
+        }
+        
+   }
+   
+   cout<<x;
+   
+    return 0;
+}
