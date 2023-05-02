@@ -50,3 +50,42 @@ int main() {
     cout<<s;
     return 0;
 }
+
+sub 2
+  1.b
+  2.b
+  3. 1,6,8,9
+  4.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[101][101],i,j;
+    
+   for(i=0;i<9;i++)
+    for(j=0;j<9;j++) 
+    a[i][j]=-1;
+    
+     for(i=0;i<9;i++)
+    for(j=0;j<9;j++)
+   { if (i==j || i+j==8)
+    a[i][j]=0;
+    else
+   { if (i+j<8)
+    a[i][j]=j+i;
+    else
+    a[i][j]=j+i-8;
+   }
+   }
+    for(i=0;i<9;i++)
+ {   for(j=0;j<9;j++) 
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+
+
+
+    
+    return 0;
+}
