@@ -131,4 +131,21 @@ int main() {
 sub 3.
  1. a
  2. 5,6,7
- 3.
+ 3. #include <iostream>
+
+using namespace std;
+int resturi(int n, int x, int y, int r)
+{
+    int nr=0;
+    for (int i=1;i<=n;i++)
+    if (i%x==r && i%y==r)
+    nr++;
+    
+    return nr;
+}
+int main() {
+    int n,x,y,r;
+    cin>>n>>x>>y>>r;
+    cout<<resturi (n,x,y,r);
+    return 0;
+}
