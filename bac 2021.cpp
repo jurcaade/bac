@@ -120,3 +120,40 @@ int main() {
     
     return 0;
 }
+
+3.
+  #include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int a, b,aux, pre,x,y;
+    cin>>a;
+    aux=a;
+    int nr=0;
+   while (a!=0)
+   {
+       nr++;
+       a/=10;
+   }
+   a=aux;
+   int p=pow(10,nr);
+   
+   
+   while (cin>>b)
+   { 
+       
+       
+       if (b%p==a && pre%p==a)
+    {     x=pre;
+         y=b;
+   }
+         
+         pre=b;
+      
+   }
+   cout<<x<<" "<<y;
+   
+    return 0;
+}
