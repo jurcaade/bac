@@ -1,5 +1,5 @@
 sub 1
-  1. c
+  1. a
   2. d
   3. d
   4. b
@@ -13,7 +13,7 @@ sub 1
    y=5 121 nr=81
   1111121121
   
-  b 6,14
+  b 6,15
   c #include <iostream>
 
 using namespace std;
@@ -55,3 +55,45 @@ i<-y
 │ scrie 1
   i=i-1
 └■
+
+2.{cinteză, ciocârlie, mierlă/, privighetoare/, scatiu}
+ (ciocârlie, privighetoare, scatiu)
+(ciocarlie, scatiu)
+(mierla,scatiu)
+
+3. fs.a=2020*f.b-2021*f.1;
+    fs.b=2021*f.b;
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+void divPrim (int n, int &s)
+{
+
+    int d=2,p;
+    while (n>1)
+    {
+        p=0;
+        while (n%d==0)
+        {
+            p++;
+            n/=d;
+        }
+       
+        if (p%2!=0)
+       s+=d;
+        
+        d++; 
+    }
+    
+}
+int main() {
+    int n,s=0;
+    cin>>n;
+    divPrim(n,s);
+    cout<<s;
+    return 0;
+}
+
+
