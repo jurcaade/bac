@@ -96,4 +96,27 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+#include <cstring>
 
+using namespace std;
+
+int main() {
+    int n,k;
+    char s[201][201]={};
+    cin>>n>>k;
+    
+    for (int i=0;i<n;i++)
+    cin>>s[i];
+   
+   
+        for (int i=0;i<n && k>0;i++)
+        if (strchr("aeiou",s[i][strlen(s[i])-1]))
+    {   cout<<s[i]<<" ";
+        k--;
+    }
+    
+    
+    return 0;
+}
