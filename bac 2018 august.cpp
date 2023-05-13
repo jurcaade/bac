@@ -146,3 +146,23 @@ int main() {
 
     return 0;
 }
+
+4.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z=0;
+    cin>>x>>y;
+    cout<<y<<" "<<x<<" ";
+
+    while(2*x-y+2>=0)
+    {
+        z=2*x-y+2;
+        cout<<z<<" ";
+        y=x;
+        x=z;
+    }
+    return 0;
+}
