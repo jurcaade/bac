@@ -87,3 +87,62 @@ int main() {
 }
     return 0;
 }
+
+sub 3
+  1. f(7) tip 1 7>3 A f(4)
+    f(4) tip 0 4>3 A f(1)
+    f(1) tip 1
+  101 c)
+  
+  2. 1(toc, creion, stilou, pană, pensulă)
+     2(toc, creion, stilou, pensulă, pană),
+     3(toc, creion, pană, stilou,pensulă),
+     4(toc, creion, pană, pensulă, stilou),
+     5(toc, creion, pensulă, stilou,pană)
+     6(toc, creion, pensulă, pana,stilou)
+     7(toc, pensulă, creion, stilou, pană)
+      
+       
+3.
+       #include <iostream>
+
+using namespace std;
+
+int prim(int x)
+{
+    int ok=1,nr=0;
+    if (x==1)
+    ok=0;
+    
+    for (int d=1;d<=x;d++)
+    if(x%d==0)
+    nr++;
+    
+    if (nr==2)
+    ok=1;
+    else
+    ok=0;
+    
+  return ok;
+    
+}
+
+int interval(int n)
+{
+  for (int i=n;i>=1;i++)
+     if (prim(i)!=0)
+        return i+1;
+
+  
+
+}
+
+
+
+int main() {
+  int n;
+  cin>>n;
+  cout<<interval(n);
+
+    return 0;
+}
