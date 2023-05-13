@@ -51,4 +51,39 @@ sub 2.
   1. a
   2. c - avem 20 arce - graf comlet orientat, grup 3 varfuri si 2 varfuri intre ele exista 6 muchii, 12 arce, scoatem 6 arce dintr un sens, apoi
   o sa avem 2 componente tare conexe.
+  
+ 3.
+  if (x!=0)
+  { rezultat.cat=2018/x;
+  rezultat.rest=2018%x;
+}
+else
+  cout<<"impartire nepermisa";
 
+4. 3,4,5,7,8
+ 5.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,v[101],a[101][101];
+    cin>>n;
+    for (int i=0;i<n;i++)
+    cin>>v[i];
+    
+      for (int j=0;j<n;j++)
+      for (int i=0;i<n;i++)
+        if (j%2==0) 
+            a[i][j]=v[n-i-1];
+        else
+             a[i][j]=v[i];
+         
+         
+         
+    for (int i=0;i<n;i++)
+ {   for (int j=0;j<n;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
