@@ -47,3 +47,8 @@ int main() {
     return 0;
 }
 
+sub 2.
+  1. a
+  2. c - avem 20 arce - graf comlet orientat, grup 3 varfuri si 2 varfuri intre ele exista 6 muchii, 12 arce, scoatem 6 arce dintr un sens, apoi
+  o sa avem 2 componente tare conexe.
+
