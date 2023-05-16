@@ -107,3 +107,11 @@ int main() {
     return 0;
 }
 
+sub 3
+      1.b
+      2. {fondante, caramele, dropsuri/, acadele/}
+           4  (fondante,dropsuri)
+           5 (fondate, acadele)
+           6 (caramele, dropsuri)
+           
+
