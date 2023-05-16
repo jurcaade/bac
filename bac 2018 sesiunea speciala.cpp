@@ -145,5 +145,42 @@ int main() {
     cout<<echilibrat(n);
     return 0;
 }
-           
+    
+4.
+      #include <iostream>
+
+using namespace std;
+int v[101]={},y[101]={};
+int main() {
+    int x,i=0,l=0,lmax=0;
+    while(cin>>x)
+    {
+        i++;
+        if (v[x]==0)
+        v[x]=i;
+        else
+        y[x]=i;
+        
+    }
+   for (int i=0;i<=9;i++)
+   {
+       l=y[i]-v[i]+1;
+    if (l>lmax)
+    lmax=l;
+   }
+   cout<<lmax<<endl;
+   for (int i=0;i<=9;i++)
+   {
+       l=y[i]-v[i]+1;
+    if (l==lmax)
+    cout<<i<<" ";
+    
+    
+   }
+   
+
+
+    
+    return 0;
+}
 
