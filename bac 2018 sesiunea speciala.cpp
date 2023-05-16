@@ -113,5 +113,37 @@ sub 3
            4  (fondante,dropsuri)
            5 (fondate, acadele)
            6 (caramele, dropsuri)
+       3.#include <iostream>
+
+using namespace std;
+int echilibrat(int n)
+{
+    int i=0,sp=0,si=0;
+    while (n!=0)
+    {
+        
+        if (i%2==0)
+        sp+=n%10;
+        else
+        si+=n%10;
+        
+        
+        i++;
+        n/=10;
+    }
+    
+    if (sp%2!=0 || si%2==0)
+    return 0;
+      
+    return 1;
+    
+}
+
+int main() {
+    int n;
+    cin>>n;
+    cout<<echilibrat(n);
+    return 0;
+}
            
 
