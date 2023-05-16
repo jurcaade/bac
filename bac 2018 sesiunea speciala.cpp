@@ -54,4 +54,56 @@ int main() {
 sub 2
       1.d
       2.c
+      4.
+      #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[101][101],i,j;
+    
+    for(i=1;i<=9;i++)
+    for(j=1;j<=9;j++)
+   if (i<j)
+   a[i][j]=i;
+   else
+   a[i][j]=j;
+   
+    for(i=1;i<=9;i++)
+ {   for(j=1;j<=9;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
+
+5.
+      #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101],*p,t[101];
+    cin.getline(s,101);
+    int maxi=0;
+    p=strtok(s," ");
+    
+   while(p!=NULL)
+   {
+   
+       if (p[0]>='0' && p[0]<='9')
+           if (p[0]>maxi)
+        {       maxi=p[0];
+               strcpy(t,p);
+       }
+       
+       
+       p=strtok(NULL," ");
+   }
+ 
+    cout<<t;
+    
+    return 0;
+}
 
