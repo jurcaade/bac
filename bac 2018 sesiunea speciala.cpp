@@ -5,7 +5,7 @@ sub 1
       80/2=40 40/2=20 20/2=10 10/2=5 c=4
       24/2=12 12/2=6 6/2=3 c=3 nr=2
       tip 2
-  b) 12 20 100 28
+  b) 12 20 100 28 
   c) citeşte n,a
  (numere naturale nenule)
  nr0
