@@ -51,3 +51,7 @@ int main() {
     cout<<nr;
 }
 
+sub 2
+      1.d
+      2.c
+
