@@ -24,5 +24,30 @@ sub 1
 └■
  scrie nr 
  
- d) 
+ d) #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,a,nr,i,b,c;
+    cin>>n>>a;
+    nr=0; i=1;
+    while(i<=n)
+    {
+        cin>>b;
+        c=0;
+        while(b%2==0)
+     {  b=b/2;
+        c++;
+    }
+    
+    if (c==a)
+    nr++;
+    
+    i++;
+        
+        
+    }
+    cout<<nr;
+}
 
