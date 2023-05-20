@@ -136,6 +136,36 @@ int main() {
     1234123121
     
     
+    3.
+    #include <iostream>
+
+using namespace std;
+
+void identice(int a, int b)
+{
+    int ok=1,x,aux;
+    for (int i=a;i<=b;i++)
+    {   ok=1; 
+        aux=i;
+        x=i%10;
+       
+    while (aux)
+    {
+        if (aux%10!=x)
+        ok=0;
+        aux/=10;
+    }
+    if (ok==1)
+    cout<<i<<" ";
+    }
+}
+int main() {
+    int a, b;
+    cin>>a>>b;
+    identice(a,b);
+    return 0;
+}
+    
     
     
     
