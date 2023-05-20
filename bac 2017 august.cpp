@@ -58,3 +58,45 @@ int main() {
     cout<<s;
     return 0;
 }
+
+sub 2
+  1. b
+  2. b
+  3. struct poligon
+  {
+    unsigned int numar;
+    struct
+    {
+      float x;
+      float y;
+    }varf[100];
+  }p;
+
+4.
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char a[101][101];
+    int i,j;
+    
+    for(i=0;i<9;i++)
+        for(j=0;j<9;j++) 
+        if (i<j && i+j<8)
+        a[i][j]='a';
+        else
+        a[i][j]='b';
+        
+         for(i=0;i<9;i++)
+ {       for(j=0;j<9;j++) 
+        cout<<a[i][j]<<" ";
+        cout<<endl;
+}
+             
+             
+             
+             
+        return 0;
+}
+  
