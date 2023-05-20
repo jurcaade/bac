@@ -125,8 +125,24 @@ int main() {
     if(ok2==0)
     cout<<"nu exista";
     
-    
-    
     return 0;
 }
-  
+  sub 3
+    1.c
+    2.f(4) tip 1234
+    f(3) tip 123
+    f(2) tip 12
+    f(1) tip 1
+    1234123121
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
