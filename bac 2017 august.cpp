@@ -92,11 +92,41 @@ int main() {
  {       for(j=0;j<9;j++) 
         cout<<a[i][j]<<" ";
         cout<<endl;
-}
-             
-             
-             
+ }
              
         return 0;
+}
+
+5.
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101], nm[100][100]={"DO","RE","MI","FA","SOL","LA","SI"};
+    cin.getline(s,101);
+    char *p;
+    p=strtok(s," ");
+    int ok2=0;
+    while(p!=NULL)
+    {
+        int ok=0;
+        for (int i=0;i<7 && ok==0;i++)
+        if (strstr(p,nm[i]))
+     {   cout<<p<<endl;
+        ok=1;
+        ok2=1;
+    }
+        
+        p=strtok(NULL," ");
+    }
+    
+    if(ok2==0)
+    cout<<"nu exista";
+    
+    
+    
+    return 0;
 }
   
