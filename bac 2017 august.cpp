@@ -33,3 +33,28 @@ c)citeşte a,b
 │ss+c
 └■
 scrie s 
+
+d)#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a,b,x,s,c;
+    cin>>a>>b;
+    if (a>b)
+    {
+        x=a;
+        a=b;
+        b=x;
+    }
+    s=0;
+    for (x=a;x<=b;x++)
+    {
+        c=2;
+        while(x%c>0)
+        c++;
+        s+=c;
+    }
+    cout<<s;
+    return 0;
+}
