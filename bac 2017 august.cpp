@@ -166,7 +166,45 @@ int main() {
     return 0;
 }
     
-    
+    4.
+      #include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,x,mini=1000,maxi=0;
+    cin>>m>>n;
+    while(m>0)
+    {
+        cin>>x;
+        if (x<mini)
+        mini=x;
+        if (x>maxi)
+        maxi=x;
+        m--;
+    }
+   
+    int nr=1,ok=0;
+    while(n>0)
+    {
+        cin>>x;
+        
+        if (x>mini && x<maxi)
+        ok=1;
+        
+        
+        if (x<mini)
+        nr++;
+            
+        n--;
+       
+    }
+    if (ok==1 || nr==1)
+    cout<<"imposibil";
+    else
+    cout<<nr;
+    return 0;
+}
     
     
     
