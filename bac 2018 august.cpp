@@ -147,6 +147,29 @@ int main() {
     return 0;
 }
 
+ #include <iostream>
+
+using namespace std;
+int interval(int n)
+{
+    int nr=0;
+ for (int i=n;i>=1;i++)
+  {     nr=0;
+      for (int d=1;d<=i;d++)
+        if(i%d==0)
+        nr++;
+        if (nr==2)
+            return i+1;
+    }
+}
+int main() {
+    int nr=0,n;
+    cin>>n;
+    cout<<interval(n);
+    
+    return 0;
+}
+
 4.
   #include <iostream>
 
