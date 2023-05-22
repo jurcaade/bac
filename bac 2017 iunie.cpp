@@ -3,9 +3,10 @@ sub 1
   2.n=3
   a) #2#1#3#2#
 b)
- pt n=10 se afiseaza 19 #
- pt n=51 se afiseaza 100 #
- 51
+  daca e par se afiseaza dublu daca nu dublu-1
+ pt n=10 se afiseaza 20 #
+ pt n=50 se afiseaza 100 #
+ 50
  c)citeşte n
  (număr natural nenul)
   i<-1
