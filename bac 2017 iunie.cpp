@@ -38,3 +38,8 @@ int main() {
     return 0;
 }
  
+sub 2
+  1.b
+  2. cout<<x.nume[0]<<endl;
+cout<<float(x.media1+x.media2)/2;
+
