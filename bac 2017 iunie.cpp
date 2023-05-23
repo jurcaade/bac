@@ -80,4 +80,41 @@ int main() {
     return 0;
 }
   
+sub 3
+  1.b
+  2 f(3,9) return 3
+    f(1,1000) r f(5,200)
+  f(5,200) r f(25,40) 
+  f(25,40) return 25
+3.#include <iostream>
 
+using namespace std;
+void duplicare(int &n)
+{
+    int p=1,s=0;
+    while(n>0)
+    {   
+        
+            
+        if (n%10%2==0)
+        {  
+            s=s+n%10/2*p;
+           p*=10;
+        } 
+       
+           s=s+n%10*p;
+            p*=10;
+        
+    
+        n/=10;
+    }
+    
+    n=s;
+}
+int main() {
+    int n;
+    cin>>n;
+    duplicare(n);
+    cout<<n;
+    return 0;
+}
