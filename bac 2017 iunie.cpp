@@ -118,3 +118,38 @@ int main() {
     cout<<n;
     return 0;
 }
+
+4.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,lung=0,lmax=0,nr=0;
+    while(cin>>x)
+    {
+        if (x%2==0)
+           lung++;
+        else
+        { 
+            if (lung>lmax)
+         {    lmax=lung;
+             nr=1;
+         }
+           else if (lung==lmax)
+            nr++;
+            
+            lung=0;
+        }
+        
+  
+    } 
+    if (lung==lmax)
+        nr++;
+    if (lung>lmax)
+        cout<<1;
+        else
+        cout<<nr;
+  
+    
+    return 0;
+}
