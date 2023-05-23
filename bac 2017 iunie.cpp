@@ -40,6 +40,7 @@ int main() {
  
 sub 2
   1.b
-  2. cout<<x.nume[0]<<endl;
+  2.c
+  3. cout<<x.nume[0]<<endl;
 cout<<float(x.media1+x.media2)/2;
 
