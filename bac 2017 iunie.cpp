@@ -43,4 +43,10 @@ sub 2
   2.c
   3. cout<<x.nume[0]<<endl;
 cout<<float(x.media1+x.media2)/2;
+4.01000
+  00100
+  10001
+  00100
+  00010
+  
 
