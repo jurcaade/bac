@@ -66,5 +66,49 @@ sub 2
           if (strstr(s,"are")==s+strlen(s)-3) 
           n++;
         }
-  
+  5.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,mij;
+   float a[51][51];
+    cin>>n;
+    int aux;
+    for (int i=1;i<=n;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+    mij=n/2+1;
+    
+    
+    for (int i=n+1;i>=1;i--)
+    for (int j=1;j<=n;j++)
+    if (i>mij)
+      a[i][j]=a[i-1][j];
+
+    
+    for (int j=1;j<=n;j++)
+ {  float ma=0;
+     for (int i=1;i<=n+1;i++)
+    
+      if (i!=mij)
+        ma=ma+a[i][j];
+        
+        a[mij][j]=ma/n;
+        
+    }
+    
+    
+    
+    for (int i=1;i<=n+1;i++)
+ {   for (int j=1;j<=n;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    
+    
+    return 0;
+}
   
