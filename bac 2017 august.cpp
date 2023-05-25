@@ -54,4 +54,17 @@ int main() {
    cout<<k;
 }
 
+sub 2
+  1.a
+  2.b
+  3. nodurile {2,3,4}
+    muchiile {(3,4)(4,2)}
+4.
+ int n=0;   
+        for(int i=1;i<=11;i++)
+        {      cin>>s;
+          if (strstr(s,"are")==s+strlen(s)-3) 
+          n++;
+        }
+  
   
