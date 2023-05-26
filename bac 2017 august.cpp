@@ -122,3 +122,27 @@ sub 3
   2. 2 3 4 1 5 6
      2 3 4 1 6 5
   
+  3.#include <iostream>
+
+using namespace std;
+void triplete (int a, int b, int c)
+{
+    int ok=0;
+    for (int i=a;i<=b;i++)
+    for (int j=i;j<=b;j++)
+    for (int k=j;k<=b;k++)
+    if (i+j+k==c)
+ {   cout<<'{'<<i<<','<<j<<','<<k<<'}'<<" ";
+    ok=1;
+}
+    if (ok==0)
+    cout<<"nu exista";
+    
+    
+}
+int main() {
+    int a, b,c;
+    cin>>a>>b>>c;
+    triplete(a,b,c);
+    return 0;
+}
