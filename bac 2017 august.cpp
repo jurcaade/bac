@@ -146,3 +146,41 @@ int main() {
     triplete(a,b,c);
     return 0;
 }
+
+4.
+  #include <iostream>
+
+using namespace std;
+int v[1001];
+int main() {
+    int x,pre=0,ok=1,r;
+    while(cin>>x)
+    {
+        v[x]++;
+    }
+    
+    for (int i=1;i<=1000;i++)
+    {  r=0;
+     for (int j=i+1;j<=1000 && r==0;j++)
+        if (v[i]!=0 && v[j]!=0)
+         r=j-i;
+       
+   
+     if (pre==0)
+      pre=r;
+      
+    if (r!=pre && r!=0)
+    ok=0;
+    
+    
+    
+    }
+    
+    if (ok==0)
+    cout<<"nu exista";
+    else
+    cout<<pre;
+        
+        
+    return 0;
+}
