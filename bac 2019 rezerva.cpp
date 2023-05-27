@@ -30,3 +30,18 @@ sub 1.
   ..
   
   => f19 =>  b
+  
+  3. d
+  4. 7 noduri deci trb sa aiba n(n-1)/2=m
+  7*6/2=21 muchii sa fie complet, are 4 21-4=17 muchii mai trb
+  => a
+  5. c
+  
+  sub 2
+  
+  
+  
+  
+  
+  
+  
