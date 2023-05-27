@@ -159,6 +159,42 @@ int main() {
     return 0;
 }
   
-  
+  3. nu e bun!
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,v[1000]={},n=0,nr=0,ok=0;
+    cin>>x;
+    while (x>0)
+    {
+        v[x%10]++;
+        x/=10;
+    }
+    
+    while(cin>>x)
+    {
+        ok=0;
+        for (int i=1;i<=9;i++)
+            if (v[i]!=0)
+              if ((x%10==i || x/10%10==i || x/100%10==i) && i>=n)
+         {       n=i;
+                ok=1;
+        }
+        if(ok==0)
+        nr++;
+       
+    
+    
+    
+    }
+    
+    if (nr>0)
+    cout<<"nu exista";
+    else
+    cout<<n;
+    return 0;
+}
   
   
