@@ -107,6 +107,30 @@ d) citește x
    a=succes
    tip succes5
   
+  sub 3
+  1.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,x,y,s=0;
+    cin>>n;
+     x=n%10;
+     n/=10;
+     
+    while(n)
+    {
+        y=n%10;
+       if (x==y)
+       s+=x*10+x;
+        x=y;
+        n/=10;
+    }
+    cout<<s;
+    return 0;
+}
+
+2.
   
   
   
