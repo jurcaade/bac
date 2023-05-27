@@ -74,7 +74,32 @@ int main() {
     cout<<z;
     return 0;
 }
-  
+
+d) citește x
+ (număr natural nenul)
+ z1
+┌repetă
+│ citeşte y (număr natural)
+  d<-2
+│┌cat timp d<=y executa
+││┌dacă x%d=0 și y%d=0 și d>z atunci
+│││ zd
+││└■
+|| d=d+1
+│└■
+│ xy
+└până când y=0
+ scrie z 
+  2.
+  struct masina
+  {
+   char marca[31];
+    struct 
+    {
+     unsigned int turatie;
+      float capacitate;
+    }motor;
+  }m;
   
   
   
