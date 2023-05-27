@@ -38,6 +38,42 @@ sub 1.
   5. c
   
   sub 2
+  1. x=15
+    y=6 
+  d=2<=6
+  d=3
+  15,6 %3 A
+  3>1
+  z=3
+  x=6
+  6,4 z=2
+  4,8 z=4
+  8,3 z=1
+  3,0 z=0
+  tip 4
+  
+  b) 20 10 5 0
+  c)#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z,d;
+    cin>>x;
+    z=1;
+    do
+    {
+        cin>>y;
+        for (d=2;d<=y;d++)
+        if (x%d==0 && y%d==0 && d>z)
+        z=d;
+        
+        x=y;
+    }while(y!=0);
+    
+    cout<<z;
+    return 0;
+}
   
   
   
