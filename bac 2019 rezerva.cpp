@@ -101,6 +101,11 @@ d) citește x
     }motor;
   }m;
   
+3. a=succint
+   b=cules
+   a=succ
+   a=succes
+   tip succes5
   
   
   
