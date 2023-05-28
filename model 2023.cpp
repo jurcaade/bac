@@ -96,3 +96,35 @@ scrie s
          s1=plantastic
          s2=fantastic
          tip 7fantastic
+
+         
+         sub 3
+         1.
+         #include <iostream>
+
+using namespace std;
+int DoiTrei(int n)
+{
+    int nr=0,nrc=0;
+        while (n>0)
+        {
+            if (n%10==2 || n%10==3)
+            nr++;
+            
+            nrc++;
+            n/=10;
+        }
+        if (nrc==nr)
+        return 1;
+        else
+        return 0;
+        
+        
+        
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<DoiTrei(n);
+    return 0;
+}
