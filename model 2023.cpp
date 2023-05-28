@@ -58,3 +58,18 @@ int main() {
     cout<<s;
     return 0;
 }
+
+       citeşte m,n,p,q
+ (numere naturale nenule, pq)
+s0
+ x<-p
+┌cat timp p<=q execută
+│┌dacă x%m=0 sau x%n=0 atunci
+││ ss+x
+│└■
+│┌dacă x%m=0 şi x%n=0 atunci
+││ ss-x
+│└■
+   p=p+1
+└■
+scrie s
