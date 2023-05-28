@@ -158,3 +158,43 @@ if (ok==0)
 cout<<"nu exista";
     return 0;
 }
+       
+       3.
+         #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,n,aux,minip=1000,minii=1000,maxip=-1,maxii=-1;
+    cin>>n;
+    aux=n;
+    while(n>0)
+    {
+        cin>>x;
+        
+        if (x<minip && x%2==0)
+        minip=x;
+        if (x<minii && x%2!=0)
+        minii=x;
+        
+        n--;
+        
+    }
+    n=aux;
+    while(n>0)
+    {
+        cin>>x;
+        if (x>maxip && x%2==0)
+        maxip=x;
+        if (x>maxii && x%2!=0)
+        maxii=x;
+        
+        n--;
+        
+    }
+    if (minip>maxii && minii>maxip)
+    cout<<"DA";
+    else
+    cout<<"NU";
+    return 0;
+}
