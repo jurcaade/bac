@@ -40,3 +40,21 @@ sub 2
     deci pana la 70,71,72,73,74
  
   
+    c)
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,p,q,s=0,x;
+    cin>>m>>n>>p>>q;
+    for (x=p;x<=q;x++)
+    {
+        if (x%m==0 || x%n==0)
+        s+=x;
+         if (x%m==0 && x%n==0)
+         s-=x;
+    }
+    cout<<s;
+    return 0;
+}
