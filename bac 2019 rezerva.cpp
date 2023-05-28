@@ -196,5 +196,36 @@ int main() {
     cout<<n;
     return 0;
 }
-  
+ 2.. 
+#include <iostream>
+#include <fstream>
+using namespace std;
+ifstream f("bac.txt");
+int main()
+{
+int fr[11],x,n=0,gasit=0,i,cif[11];
+for(i=0;i<=9;i++)
+{fr[i]=0;
+ cif[i]=0;}
+while(f>>x)
+{
+n=n+1;
+while(x!=0)
+{
+cif[x%10]++;
+x=x/10;
+}
+for(i=0;i<=9;i++)
+if(cif[i]!=0) fr[i]++;
+}
+i=9;
+while(i>0 && gasit==0)
+{
+if(fr[i]==n){cout<<i;gasit=1;}
+i--;
+}
+if(gasit==0) cout<<"nu exista";
+return 0;
+}
+
   
