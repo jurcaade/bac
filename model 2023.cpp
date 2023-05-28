@@ -88,3 +88,11 @@ scrie s
   
    for (int i=0;i<3;i++)
    cout<<c[i].nume<<" ";
+       
+       3.
+         s1=plantau fistic
+         p= fistic - plantau fistic = 7 (ramane plantau care are 7 litere)
+         s2=fistic
+         s1=plantastic
+         s2=fantastic
+         tip 7fantastic
