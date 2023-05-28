@@ -73,3 +73,18 @@ s0
    p=p+1
 └■
 scrie s
+         
+       2.
+         echipa aux;
+  for (int i=0;i<3;i++)
+  for (int j=i+1;j<3;j++)
+  
+  if (c[i].rezultat<c[j].rezultat)
+  {
+      aux=c[i];
+      c[i]=c[j];
+      c[j]=aux;
+  }
+  
+   for (int i=0;i<3;i++)
+   cout<<c[i].nume<<" ";
