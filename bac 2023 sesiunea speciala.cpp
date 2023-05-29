@@ -49,3 +49,49 @@ d)
 | i=i+1
 └■
 
+2. 4,5,6,7
+3.for(int k=strlen(s)-1;k>=0;k--)
+    if (s[0]==s[k])
+  {      for (int i=0;i<=k;i++)
+        cout<<s[i];
+        cout<<" ";
+  }
+
+sub 3
+  1.
+  #include <iostream>
+
+using namespace std;
+void Putere(int n, int &x, int &p)
+{
+  int aux,xgasit=0,px;
+   aux=n; p=0;
+   x=2;
+   
+      while(xgasit==0)
+       { 
+       n=aux;
+       p=0;
+       while(n%x==0)
+       {
+           p++;
+           n/=x;
+       }
+        if(n==1)
+        { 
+            xgasit=x;
+            px=p;  
+        }
+        x++;
+       } 
+   
+   x=xgasit;
+   p=px;
+}
+int main() {
+    int n,x,p;
+    cin>>n;
+    Putere(n,x,p);
+    cout<<x<<" "<<p;
+    return 0;
+}
