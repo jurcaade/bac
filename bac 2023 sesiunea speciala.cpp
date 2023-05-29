@@ -125,3 +125,42 @@ int main() {
 }
     return 0;
 }
+
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z,mini=1000,maxi=0,ok=0;
+    cin>>x>>y;
+    int aux;
+    if (x>y)
+    {
+    aux=x;
+    x=y;
+    y=aux;
+    }
+    int nr=2;
+    while (cin>>z)
+    {
+        nr++;
+        if (z<x)
+        x=z;
+        if (z>y)
+        y=z;
+        
+        if (z>x && z<y)
+        {
+            if (nr<mini)
+            mini=nr;
+            if (nr>maxi)
+            maxi=nr;
+            ok=1;
+        }
+    }
+    if (ok==0)
+    cout<<"nu exista";
+    else
+    cout<<mini<<" "<<maxi;
+    return 0;
+}
