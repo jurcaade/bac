@@ -39,3 +39,18 @@ int main() {
     }
    cout<<k;
 }
+
+d) citeşte n
+ (număr natural)
+ i2; k0
+┌cât timp n≥i execută
+| daca n%i=0 atunci
+│┌repeta 
+││ kk+1
+││ n[n/i]
+│└pana cand n%i!=0
+│┌dacă i=2 atunci ii+1
+││altfel ii+2
+│└■
+└■
+ scrie k
