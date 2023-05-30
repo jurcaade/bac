@@ -54,3 +54,11 @@ d) citeşte n
 │└■
 └■
  scrie k
+ 
+ 2. 2023,2024,2025
+  3.
+    for (int i=0;i<strlen(s);i++)
+   if (s[i]==' ')
+   strcpy(id,s+i+1);
+  
+  strcat(id,"2022");
