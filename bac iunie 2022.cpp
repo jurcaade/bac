@@ -134,3 +134,24 @@ int main() {
     
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z,nr=0,pre=0;
+    cin>>x>>y;
+    while(cin>>z)
+    {
+        if (z>=x && z<=y && z!=pre)
+        nr++;
+       
+    
+        
+        pre=z;
+    }
+    cout<<nr;
+    return 0;
+}
