@@ -62,3 +62,34 @@ d) citeşte n
    strcpy(id,s+i+1);
   
   strcat(id,"2022");
+
+sub 3
+  1.
+  #include <iostream>
+
+using namespace std;
+void secventa(int &n)
+{
+    int s=0,p=1;
+    while(n>0)
+    {
+        int x=n%10;
+        if (x==2 && n/10%10==2)
+        x=0;
+        
+        s=s+x*p;
+        p*=10;
+        
+        n/=10;
+    }
+    n=s;
+    
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    secventa(n);
+    cout<<n;
+    return 0;
+}
