@@ -93,3 +93,44 @@ int main() {
     cout<<n;
     return 0;
 }
+
+2.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,a[101][101],mini=11,s=0;
+    cin>>m>>n;
+    for (int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+     for (int i=0;i<=m+1;i++)
+    for (int j=0;j<=n+1;j++)
+ {   a[0][j]=a[m+1][j]=11;
+    a[i][0]=a[i][n+1]=11;
+}
+    
+    
+    for (int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+ {  mini=11;
+     if (a[i][j]<a[i-1][j] && a[i][j]<a[i+1][j] && a[i][j]<a[i][j+1] && a[i][j]<a[i][j-1])
+  {      if (a[i-1][j]<mini)
+        mini=a[i-1][j];
+        if (a[i+1][j]<mini)
+        mini=a[i+1][j];
+        if (a[i][j+1]<mini)
+        mini=a[i][j+1];
+        if (a[i][j-1]<mini)
+        mini=a[i][j-1];   
+    
+    s+=mini-a[i][j];
+  }
+  
+ }
+    
+    cout<<s;
+    
+    return 0;
+}
