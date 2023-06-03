@@ -161,30 +161,28 @@ int main() {
    lung++;
    while(cin>>x)
    {
-       if (x!=pre)
-       {    if (lung==x)
-         {  s+=x;
-           lung=1;
-       }
-           else
-           { 
-              if (s>lmax)
-            {  lmax=s;
-                s=0;
-           }
-                lung=1;
-                s=0;
-           }
-       }
-       else
+       if (x==pre)
        lung++;
+       else
+       { 
+            if (lung==pre)
+            s+=pre;
+            else
+            {
+                if(s>lmax)
+                lmax=s;
+                s=0;
+            }
+            lung=1;
+       }
        
        pre=x;
    }
-   if (lung==x)
-   s+=x;
+   if (lung==pre)
+   s+=pre;
    if(s>lmax)
    lmax=s;
+   
    cout<<lmax;
     return 0;
 }
