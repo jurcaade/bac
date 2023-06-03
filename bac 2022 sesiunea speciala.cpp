@@ -64,3 +64,7 @@ citeşte n (număr natural)
 │└■
 │ n[n/10]
 └sf cat timp
+
+2. [1,2] [1,3] [1,5] [2,3] [2,5] [3,5]
+3. for (int i=0;i<15;i++)
+  s+=t[i].nrLocuri*t[i].pret;
