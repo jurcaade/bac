@@ -76,8 +76,8 @@ using namespace std;
 void patrate(int n, int &x, int &y)
 {
     int ok=0;
-    for (int i=2;i<=n && ok==0 ;i++)
-    for (int j=i+1;j<=n;j++)
+    for (int i=2;i<=n/2 && ok==0 ;i++)
+    for (int j=i+1;j<=n/2;j++)
     if ((i*i)*(j*j)==n)
  {   x=i;
     y=j;
