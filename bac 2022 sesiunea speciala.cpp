@@ -68,3 +68,29 @@ citeşte n (număr natural)
 2. [1,2] [1,3] [1,5] [2,3] [2,5] [3,5]
 3. for (int i=0;i<15;i++)
   s+=t[i].nrLocuri*t[i].pret;
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+void patrate(int n, int &x, int &y)
+{
+    int ok=0;
+    for (int i=2;i<=n && ok==0 ;i++)
+    for (int j=i+1;j<=n;j++)
+    if ((i*i)*(j*j)==n)
+ {   x=i;
+    y=j;
+    ok=1;
+}
+    
+    
+    
+}
+int main() {
+    int n,x,y;
+    cin>>n;
+    patrate(n,x,y);
+    cout<<x<<" "<<y;
+    return 0;
+}
