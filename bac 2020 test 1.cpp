@@ -77,3 +77,20 @@ int main() {
     cout<<m;
     return 0;
 }
+
+d)
+  citeşte n (număr natural)
+p1; m0; k0
+┌cât timp n≠0 execută
+│ citește x (număr natural)
+│
+│ x[x/p]
+│
+│┌dacă x≠0 atunci cx%10
+││altfel cn%10
+│└■
+│ mc*p+m
+│ n[n/10]
+│ pp*10; kk+1
+└■
+scrie m
