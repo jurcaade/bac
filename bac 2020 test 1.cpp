@@ -144,5 +144,39 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,k,y,z,a[101][101];
+    cin>>n>>k;
+    int m=n*k;
+    z=k;
+    
+    for (int i=1;i<=n;i++)
+    {
+         y=i;
+            for (int j=1;j<=m;j++)
+           {
+               a[i][j]=y;
+                z--;
+                if (z==0)
+                {
+                    y++;
+                    z=k;
+                }
+             }
+    }
+   
+     for (int i=1;i<=n;i++)
+ {   for (int j=1;j<=m;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
+
   
   
