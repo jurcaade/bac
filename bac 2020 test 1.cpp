@@ -179,15 +179,15 @@ int main() {
 }
 
 3.
-  #include <iostream>
+ #include <iostream>
 
 using namespace std;
 
 int main() {
-    int x,y,z;
+    int x,y,z=0;
     cin>>x>>y;
     cout<<y<<" "<<x<<" ";
-    while(3*x-y>1)
+    while(z!=1)
     {
         z=3*x-y;
         cout<<z<<" ";
@@ -195,7 +195,7 @@ int main() {
         x=z;
         
     }
-    cout<<1<<" "<<1;
+    cout<<1;
     return 0;
 }
 
