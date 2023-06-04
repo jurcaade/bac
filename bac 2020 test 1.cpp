@@ -94,3 +94,55 @@ p1; m0; k0
 │ pp*10; kk+1
 └■
 scrie m
+
+2.struct triunghi
+{
+  struct FaraNume
+  {
+  float x;
+  float y;
+  }A,B,C;
+ }t;
+
+3. a=VIcToriE
+tip 8viCtORIe
+  
+  sub 3
+  1.#include <iostream>
+
+using namespace std;
+void putere(int n, int &d, int &p)
+{
+    int dmax=0,pmax=0;
+    d=2;
+    while(n>1)
+    {
+        p=0;
+        while(n%d==0)
+        {
+            n/=d;
+            p++;
+        }
+        if (p>0)
+        if (p>=pmax)
+     {   pmax=p;
+        dmax=d;
+    }
+        
+        d++;
+    }
+    p=pmax;
+    d=dmax;
+    
+    
+}
+int main() {
+    int n,d,p;
+    cin>>n;
+    putere(n,d,p);
+    cout<<d<<" "<<p;
+    return 0;
+}
+
+  
+  
