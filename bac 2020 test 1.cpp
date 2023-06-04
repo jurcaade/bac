@@ -178,5 +178,26 @@ int main() {
     return 0;
 }
 
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z;
+    cin>>x>>y;
+    cout<<y<<" "<<x<<" ";
+    while(3*x-y>1)
+    {
+        z=3*x-y;
+        cout<<z<<" ";
+        y=x;
+        x=z;
+        
+    }
+    cout<<1<<" "<<1;
+    return 0;
+}
+
   
   
