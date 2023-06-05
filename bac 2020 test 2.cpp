@@ -66,3 +66,11 @@ m0
 │ mm*10+c
 └
 scrie m
+
+
+2. struct specie
+{
+  unsigned int cod;
+  unsigned int nrExemplare;
+  unsigned int varsta[10];
+}s[20];
