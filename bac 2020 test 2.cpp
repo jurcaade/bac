@@ -157,7 +157,7 @@ int main() {
     int x,n1=0,n2=0,n3=0;
     while (cin>>x)
     {
-        if (x%10==0 && x/10%10==2)
+        if (x%100==20)
      {   
         if (x>n1)
         n1=x;
