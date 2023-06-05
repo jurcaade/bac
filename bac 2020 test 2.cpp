@@ -99,3 +99,51 @@ int main() {
     
     return 0;
 }
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+
+void fii(int n)
+{
+    for (int i=n;i>=1;i--)
+    for (int j=1;j<i;j++)
+    if (i*j==n)
+    cout<<'('<<i<<" "<<j<<')'<<" ";
+    
+    
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    fii(n);
+    return 0;
+}
+
+2.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char s[101],t[101]={};
+    cin.getline(s,101);
+    char *p=strtok(s," ");
+    
+    while(p!=NULL)
+   {
+       if (p[0]!='-')
+    {   strcat(t,p);
+       strcat(t," ");
+   }
+       
+       p=strtok(NULL," ");
+   }
+   strcpy(s,t);
+    cout<<s;
+   
+    return 0;
+}
