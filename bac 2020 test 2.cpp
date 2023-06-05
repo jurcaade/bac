@@ -147,3 +147,27 @@ int main() {
    
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,n1=0,n2=0,n3=0;
+    while (cin>>x)
+    {
+        if (x%10==0 && x/10%10==2)
+     {   
+        if (x>n1)
+        n1=x;
+        if (x<n1 && x>n2)
+        n2=x;
+        if (x<n2 && x>n3)
+        n3=x;
+    }
+        
+    }
+    
+    cout<<n3<<" "<<n2<<" "<<n1;
+}
