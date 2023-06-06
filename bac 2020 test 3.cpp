@@ -61,3 +61,32 @@ c1n%10; n[n/10]; c2n%10
 │ c1n%10; n[n/10]; c2n%10
 └
 scrie s,' ',n
+
+2.struct cerc
+{
+float raza;
+struct FaraNume
+{
+float x,y;
+}centru;
+}fig;
+
+3.#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    int p;
+    char s[21];
+    cin.getline(s,21);
+    
+    for (int p=0;p<strlen(s);p++)
+ {   if (!(s[p]=='A' && (s[p-1]=='I' || s[p+1]=='I')))
+    cout<<s[p];
+}
+    
+    
+    
+    return 0;
+}
+
