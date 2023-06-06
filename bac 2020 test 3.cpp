@@ -146,3 +146,45 @@ int main() {
 }
     return 0;
 }
+
+3.
+  #include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+  //ifstream cin("bac.in);
+    int x,l1n,l1p,lup,lun,lung=0;
+    int okn=0,okp=0;
+    
+    while(cin>>x)
+    {
+        lung++;
+        
+        if (x<0 && okn==0) {
+        l1n=lung;
+        okn=1;
+      }
+      
+      if (x>0 && okp==0) { 
+        l1p=lung;
+        okp=1;
+      }
+      
+       if (x<0)
+        lun=lung;
+        
+       if (x>0)
+        lup=lung;
+    }
+    
+    
+    if (lun-l1p>lup-l1n)
+    cout<<lun-l1p+1;
+    else
+    cout<<lup-l1n+1;
+    return 0;
+}
+//Algoritmul citeste fiecare numar din fisier si gaseste pozitia primului numar pozitiv, primului numar negativ respectiv
+// pozitia ultimului numar pozitiv si a ultimului numar negativ. In final compara lungimea sirului in care primul nr e pozitiv si ultimul negativ
+// cu cea a sirului in care primul e pozitv si ultimul negativ si o afiseaza
