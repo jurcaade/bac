@@ -84,9 +84,37 @@ int main() {
  {   if (!(s[p]=='A' && (s[p-1]=='I' || s[p+1]=='I')))
     cout<<s[p];
 }
-    
-    
-    
+   
     return 0;
 }
 
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+int factori(int n, int m)
+{
+    int d=2,nr=0;
+    while (n>1 && m>1)
+    {
+     if(n%d==0 && m%d==0)
+     nr++;
+     
+      while (n%d==0)
+       n/=d;
+      while (m%d==0)
+       m/=d;
+     
+        d++;
+    }
+    return nr;
+        
+}
+int main() {
+    int n,m;
+    cin>>n>>m;
+  cout<<factori(n,m);
+ 
+    return 0;
+}
