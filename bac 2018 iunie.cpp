@@ -128,6 +128,45 @@ int main() {
     return 0;
 }
 
+var 2
+  #include <cstring>
+#include <iostream>
+using namespace std;
+int main()
+{
+    char s[101] = {}, c[101] = {}, a[101] = {};
+    int poz = 0;
+    cin.getline(s, 101);
+    cin.getline(c, 101);
+    // presupun ca sirul c incepe cu 0
+    if (strlen(s) != strlen(c))
+    {
+        cout << "cod incorect";
+        return 0;
+    }
+
+    for (int i = strlen(c) - 1; i >= 0; i--)
+        if(strchr("02468",c[i])!=NULL)
+        {
+            a[poz]=s[i];
+            poz++;
+        }
+
+    for (int i = 0; i <= strlen(c) - 1; i++)
+    {
+        if(strchr("02468",c[i])==NULL)
+        {
+            a[poz]=s[i];
+            poz++;
+        }
+    }
+    a[poz]='\0';
+    strcpy(s, a);
+    cout << endl << s;
+    return 0;
+}
+
+
 sub 3.
  1. a
  2. 5,6,7
