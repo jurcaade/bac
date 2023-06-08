@@ -114,4 +114,42 @@ int main() {
    cout<<cifreImpare(n);
     return 0;
 }
+4.
+  #include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main()
+{
+    int n;
+    cin >> n; 
+
+    int u=0,ok=0;
+    int x;
+    
+    while(cin>>x)
+    {
+        for(int i=u+1;i<x;i++) 
+        {
+            
+            cout<<i<<" ";
+            ok=1;
+        }
+        u=x;
+    }
+    
+    for(int i=x+1;i<=n;i++) 
+    {
+        
+        cout<<i<<" ";
+        ok=1;
+    }
+    
+    if(ok==0)
+    cout<<"Nu exista";
+    
+    return 0;
+}
   
