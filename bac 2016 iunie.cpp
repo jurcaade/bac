@@ -75,3 +75,43 @@ int main() {
     return 0;
 }
    
+sub 3
+  1. 2016201202
+  f(2016) tip 2016
+  f(201) tip 201
+  f(20) tip 20
+  f(2) tip 2
+  f(0)
+  c
+  
+  2. (pere, mure/, afine, fragi/, zmeura)
+  a 4 a : (pere, afine, zmeură)
+  a 5 a : (pere, fragi, zmeura)
+  a 6 a : (mure, afine, zmeura)
+
+3.#include <iostream>
+
+using namespace std;
+int cifreImpare(int n)
+{
+    int s=0, p=1, aux=n;
+    while (n>0)
+    {
+        if (n%2==0)
+     {   s+=n%10*p;
+        p*=10;
+    }
+        n/=10;
+    }
+    if (s==aux)
+    s=-1;
+    return s;
+    
+}
+int main() {
+   int n;
+   cin>>n;
+   cout<<cifreImpare(n);
+    return 0;
+}
+  
