@@ -144,3 +144,31 @@ int main() {
     cout<<d;
     return 0;
 }
+
+4.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,maxi1=0,maxi2=0,nr=0;
+    while(cin>>x)
+    {
+        if (x%2!=0)
+        nr++;
+        else
+          {  if (nr==3)  
+               if(x>maxi1)
+                {
+                    maxi2=maxi1;
+                    maxi1=x;
+                }
+                else if(x>maxi2)
+                maxi2=x;
+          }     
+       
+        
+    }
+    cout<<maxi2<<" "<<maxi1;
+    return 0;
+}
