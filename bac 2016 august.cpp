@@ -117,7 +117,7 @@ T inaintea lui A
 using namespace std;
 void duplicare(int n, int &d)
 {
-    int p=1,s=0;
+    int p=1,s=0,ok=0;
     while(n>0)
     {
         s=s+n%10*p;
@@ -127,9 +127,13 @@ void duplicare(int n, int &d)
         {
         s=s+n%10*p;
         p*=10;
+        ok=1;
         }
         n/=10;
     }
+    if (ok==0)
+    d=-1;
+    else
     d=s;
     
 }
