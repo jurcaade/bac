@@ -84,3 +84,59 @@ int main() {
     cout<<"NU";
     return 0;
 }
+
+sub 3
+  1. f1
+  f5=5*f4=120
+  f4=4*f3=24
+  f3=3*f2=6
+  f2=2*f1=2
+  f1=1*f0=1
+  f0=1
+  
+  f2
+  f5=5*f4=0
+  f4=4*f3=0
+  f3=3*f2=0
+  f2=2*f1=0
+  f1=1*f0=0
+  f0=0
+  
+  b)
+  
+  2. {A, C, E, R, T}
+T inaintea lui A
+1: CERTA
+2: CETAR
+3: CETRA
+4: CRETA
+5: CRTAE
+
+3.#include <iostream>
+
+using namespace std;
+void duplicare(int n, int &d)
+{
+    int p=1,s=0;
+    while(n>0)
+    {
+        s=s+n%10*p;
+        p*=10;
+        
+        if (n%2==0)
+        {
+        s=s+n%10*p;
+        p*=10;
+        }
+        n/=10;
+    }
+    d=s;
+    
+}
+int main() {
+    int n,d=0;
+    cin>>n;
+    duplicare(n,d);
+    cout<<d;
+    return 0;
+}
