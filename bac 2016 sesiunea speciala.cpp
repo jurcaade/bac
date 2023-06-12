@@ -91,3 +91,64 @@ int main() {
 cout<<t;
     return 0;
 }
+
+sub 3
+  1. b
+  2. 5: 001101
+     6: 010010
+     7: 010011
+     8: 010100
+   3.#include <iostream>
+
+using namespace std;
+int minDivPrim(int n)
+{
+    int d=2,p=0,nr=1;
+    while (n>1)
+    {
+        p=0;
+        while(n%d==0)
+        {
+            p++;
+            n/=d;
+            
+        }
+        if (p>0)
+        nr=nr*d;
+        
+        d++;
+        
+    }
+    return nr;
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<minDivPrim(n);
+    return 0;
+}
+
+4.#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int n,x;
+    cin>>n;
+   
+    
+    while (n>0)
+    {
+        x=(n+1)/2*pow(-1,n+1);
+        cout<<x<<" ";
+        n--;
+    }
+    
+    
+    
+    
+    
+    return 0;
+}
