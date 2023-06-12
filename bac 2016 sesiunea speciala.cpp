@@ -2,7 +2,7 @@ sub 1
   1.a
   2. a) n=81112337  
   tip 3
-  b) 11110, 11112, 12222
+  b) 11110, 11112 ... 11119 (9 numere) + 10000 12222 ... 19999 (9 numere) 9+9=18 
   c) citeşte n
  (număr natural nenul)
  k1
