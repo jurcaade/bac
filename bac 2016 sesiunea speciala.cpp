@@ -53,3 +53,41 @@ sub 2
 
 4.for (i=1;i<=20;i++)
   s+==p[i].nrLocuriInchiriate*p[i].pretOra;
+
+5.
+  #include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    int n,k;
+    char s[21][21],t[21]={};
+    cin>>n;
+    cin.get();
+    
+      for (int i=1;i<=n;i++)
+ {     cin.get(s[i],21);
+      cin.get();
+}
+    
+    cin>>k;
+    
+     for (int i=1;i<=n;i++)
+   { int n=strlen(s[i]);
+       if (n==k)
+ {   strcat(t,s[i]);
+     strcat (t," ");
+ }
+}
+      for (int i=1;i<=n;i++)
+   { int n=strlen(s[i]);
+       if (n!=k)
+ {   strcat(t,s[i]);
+     strcat (t," ");
+ }
+}
+
+cout<<t;
+    return 0;
+}
