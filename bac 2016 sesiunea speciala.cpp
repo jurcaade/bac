@@ -45,3 +45,11 @@ int main() {
 
     return 0;
 }
+
+sub 2
+1. d
+2. a
+3. {2,3,1,7}
+
+4.for (i=1;i<=20;i++)
+  s+==p[i].nrLocuriInchiriate*p[i].pretOra;
