@@ -119,3 +119,33 @@ int main() {
     generatoare(n);
     return 0;
 }
+  
+  2.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,a[21][21];
+    cin>>m>>n;
+    for (int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+    int ok=1,nr=0;
+    
+     for (int j=2;j<=n;j++)
+ {
+     ok=1;
+     for (int i=1;i<=m;i++)
+        if (a[i][1]==a[i][j])
+        ok=0;
+        
+        if (ok==1)
+        nr++;
+        
+    }
+    cout<<nr;
+    
+    return 0;
+}
