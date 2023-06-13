@@ -24,7 +24,7 @@ marar si cascaval doar cu urda
   => d
     
    4.c
-    5.a
+    5.b
     
   sub 2
     1. n= 49335
@@ -36,7 +36,7 @@ marar si cascaval doar cu urda
     tip 4 
     3 3 3 4 
     
-    b) 1014, 1015, 1021
+    b) 1014, 1015, 1016, 1017
     
     c)
     #include <iostream>
@@ -76,3 +76,46 @@ int main() {
 │└pana cand c1>=c2
 └până când n≤9
 
+  2. struct poliedru
+  {
+    unsigned int NrVarfuri;
+    float Muchie;
+    struct FaraNume
+    {
+      float FataMuchie;
+      float FataFata;
+    }unghi;
+  }p;
+  
+  
+  3.s=optsprezece
+    i=0 j=10
+    s=opusprezdce
+    s=opusqrdzdce
+
+    
+    sub 3
+    1.#include <iostream>
+
+using namespace std;
+void generatoare(int n)
+{
+    int ok=0;
+    for (int i=2;i<=n;i+=2)
+    for (int j=1;j<=n;j++)
+    if (i*j+i/j==n)
+ {   cout<<i<<'-'<<j<<" ";
+    ok=1;
+}
+
+if (ok==0)
+cout<<"nu exista";
+    
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    generatoare(n);
+    return 0;
+}
