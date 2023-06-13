@@ -149,3 +149,32 @@ int main() {
     
     return 0;
 }
+  
+  3.
+    #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,nr=0,pre=-1;
+    while(cin>>x)
+    {
+        if (x==pre)
+        nr++;
+        else
+        {
+            if (nr==1)
+            cout<<pre<<" ";
+            nr=0;
+        }
+        
+        pre=x;
+        
+        
+        
+    }
+    
+    if (nr==1)
+    cout<<pre<<" ";
+    return 0;
+}
