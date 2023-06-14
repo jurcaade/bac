@@ -205,8 +205,35 @@ int main() {
     cout<<nr;
     return 0;
 }
+var 2
     
-    
+    #include <iostream>
+#include <fstream>
+using namespace std;
+ifstream f("bac.txt");
+int main()
+{
+
+  int st=0, dr=0, x=0, y=0, n, m;
+  f>>n>>m>>st;
+  for(int i=2; i<=n; i++)
+    f>>dr;
+
+  f>>x;     //// x st dr y
+  for(int j=2; j<=m; j++){
+      f>>y;
+    if(x<st && dr<y){
+      cout<<j;
+      return 0;
+    }
+    x=y;
+  }
+cout<<"imposibil";
+  return 0;
+}
+
+
+
     
     
     
