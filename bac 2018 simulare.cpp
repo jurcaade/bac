@@ -148,7 +148,40 @@ int main() {
 }
 
   
-  
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z,aux;
+    cin>>x>>y;
+    if (y<x)
+    {
+        aux=x;
+        x=y;
+       y=aux;
+    }
+   int okx=0,oky=0;
+    while(cin>>z)
+    {
+     
+       if (x<z && okx==0)
+     {  cout<<x<<" ";
+       okx=1;
+    }
+       if(y<z && oky==0)
+     {  cout<<y<<" ";
+       oky=1;
+    }
+       cout<<z<<" ";
+     
+    }
+    if (okx==0)
+    cout<<x<<" ";
+     if (oky==0)
+    cout<<y<<" ";
+    return 0;
+}
   
   
   
