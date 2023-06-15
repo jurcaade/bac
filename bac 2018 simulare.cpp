@@ -63,4 +63,47 @@ sub 2
     else
     a[i][j]=1;
     
+
+5.
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char s[101],v[101][101]={},a[101];
+    cin.getline(s,101);
+    char *p =strtok(s," ");
+    int i=0,ok=0;
+    while(p!=NULL)
+    {
+       strcpy(v[i++],p);
+        p=strtok(NULL," ");
+        
+    }
+    int n=i;
+    
+    for (i=0;i<n;i++)
+      { int l=strlen(v[i]);
+          if (l%2!=0)
+        {
+                strcpy(a,v[i]+l/2+1);
+                v[i][l/2+1]=v[i][l/2];
+                strcpy(v[i]+l/2+2,a);
+        
+            
+            for (int j=0;j<n;j++)
+            if (strcmp(v[i],v[j])==0)
+            ok=1;
+            
+            
+            
+        }
+      }
+    if (ok==1)
+    cout<<"DA";
+    else
+    cout<<"NU";
+    
+    return 0;
+}
     
