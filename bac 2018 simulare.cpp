@@ -54,3 +54,13 @@ sub 2
     unsigned int an;
     float temperatura[15];
   }m;
+
+4.
+   for(i=0;i<9;i++)
+     for(j=0;j<9;j++) 
+     if (i+j==8 || i+j==7 || i+j==9)
+     a[i][j]=8;
+    else
+    a[i][j]=1;
+    
+    
