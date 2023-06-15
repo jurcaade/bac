@@ -107,3 +107,50 @@ int main() {
     return 0;
 }
     
+sub 3
+  1.f(2203,2018)=10*f(220,201)=1100
+  f(220,201)=10*f(22,20)=110
+  f(22,20)=1+10*f(2,2)=11
+  f(2,2)=1+10*f(0,0)=1
+  f(0,0)=0
+  => a
+  
+  2.{roșu/, albastru/, roz, portocaliu, verde}
+a 5 a : (roșu, roz, verde, albastru)
+a 6 a : (roșu, roz, verde, portocaliu)
+a 7 a : (roșu, portocaliu, albastru, roz)
+
+3.#include <iostream>
+
+
+using namespace std;
+void radical(int n, int &x,int &y)
+{
+
+  
+   for (int i=1;i<=n/2;i++)
+    for (int j=1;j<=n/2;j++)
+    if (n==i*i*j)
+    {
+        x=i;
+        y=j;
+      
+    }
+    
+    
+}
+int main() {
+    int n,x,y;
+    cin>>n;
+    radical(n,x,y);
+    cout<<x<<" "<<y;
+    return 0;
+}
+
+  
+  
+  
+  
+  
+  
+  
