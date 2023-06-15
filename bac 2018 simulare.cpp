@@ -43,3 +43,14 @@ int main() {
 }
 cout<<'#';
 }
+
+
+sub 2
+  1.d
+  2.b
+  3. struct meteo
+  {
+    unsigned int luna;
+    unsigned int an;
+    float temperatura[15];
+  }m;
