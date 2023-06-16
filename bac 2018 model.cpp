@@ -146,6 +146,33 @@ fado inainte de romanta
   trova, fado, doina, romanta, balada //si asta
   trova, fado, romanta, balada, doina
   
+  3.#include <iostream>
+
+using namespace std;
+void divizori(int n, int &x, int &y, int &z)
+{
+
+   for (int i=2;i<=n;i++)
+   for (int j=i+1;j<=n;j++)
+   for (int k=j+1;k<=n;k++)
+   if (n%i==0 && n%j==0 && n%k==0)
+   if (i+j+k==n)
+   {
+       x=i;
+       y=j;
+       z=k;
+      
+   }
+    
+    
+}
+int main() {
+    int n,x=0,y=0,z=0;
+    cin>>n;
+    divizori(n,x,y,z);
+    cout<<x<<" "<<y<<" "<<z;
+    return 0;
+}
   
   
   
