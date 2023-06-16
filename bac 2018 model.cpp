@@ -174,7 +174,35 @@ int main() {
     return 0;
 }
   
-  
+4.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,v[101]={};
+    while(cin>>x)
+    {
+    
+        while(x!=0)
+        {
+            int k=x%100;
+            v[k]++;
+            x/=10;
+        }
+        
+    }
+    
+    for (int i=10;i<=99;i++)
+    if (v[i]==1)
+    cout<<i<<" ";
+    
+    
+    return 0;
+}
+  //Programul citeste pe rand numerele din fisier. Pentru fiecare numar citit se retine toate perechile de 2 cifre ale acestuia si memoreaza
+//numarul aparitiei perechilor intr un vector de frecventa. Apoi se parcurg toate numerele de 2
+ // cifre si se verifica daca au aparut o singura data. In acest caz se afiseaza.
   
   
   
