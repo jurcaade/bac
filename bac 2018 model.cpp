@@ -58,3 +58,30 @@ int main() {
     }
 }
   
+
+sub 2
+  1.c
+  2. avem 21 noduri intr un graf neorienentat complex=> 210 muchii
+  daca luam o componenta conexa de 10 noduri are 45 muchii
+  si alta com conexa de 11 noduri are 55 muchii
+  in total 100 deci putem scadea 110 muchii si indeplinim cerinta
+  => d
+  3. struct masina
+  {
+   char marca[21];
+    struct FaraNume
+    {
+     unsigned int luna;
+      unsigned int an;
+    }data;
+    
+  }m;
+
+4.
+   if (strlen(s)%2==0)
+    strcpy(x,s);
+    else
+    {
+        strcpy(s+strlen(s)/2,s+strlen(s)/2+1);
+         strcpy(x,s);
+    }
