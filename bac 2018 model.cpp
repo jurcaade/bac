@@ -5,13 +5,18 @@ sub 1
              a=1 b=2 c=3
      3=3 tip 3
      z=4 c=3 a=2 b=3 c=5
-     z=5 c=5 a=3 b=5 c=8
+    tip 5
+     z=5 
+     z=6 c=8
+     z=7 
+     z=8
+  tip 8
      
-  tip 3
+  tip 3 5 8 
   
-  b) sirul e 1 2 3 5 8 12 20 32 52 84..
-  cea mai mica valorare: 20
-  cea mai mare valoare: 31
+  b) sirul e 1 2 3 5 8 13 21 34 55 89..
+  cea mai mica valorare: 21
+  cea mai mare valoare: 33
     
   c)citeşte x,y
 
