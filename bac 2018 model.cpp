@@ -85,3 +85,73 @@ sub 2
         strcpy(s+strlen(s)/2,s+strlen(s)/2+1);
          strcpy(x,s);
     }
+
+
+5.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int n,a[51][51];
+    cin>>n;
+    
+    
+    for (int i=1;i<=n;i++)
+    for (int j=1;j<=n;j++)
+    if (i+j==n+1 || i+j==n || i+j==n+2 )
+    a[i][j]=1;
+    else
+    a[i][j]=2;
+    
+    
+     for (int i=1;i<=n;i++)
+ {   for (int j=1;j<=n;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    return 0;
+}
+
+sub 3
+  1.
+  f20,18=1+f10,18=6
+  f10,18=1+f10,9=5
+  f10,9=1+f5,9=4
+  f5,9=1+f5,4=3
+  f5,4=1+f2,4=2
+  f2,4=1+f2,2=1
+  f2,2=0
+  => c
+  
+  
+  2.
+  {baladă, doină, fado, romanță, trova},
+fado inainte de romanta
+    (baladă, fado, doină, trova,romanță)
+    (baladă, fado, romanta, doina,trova)
+    (baladă, fado, romanta, trova,doina)
+   (baladă, fado, trova, doina,romanta)
+   (baladă, fado, trova, romanta,doina)
+  --
+  trova, balada, doina, fado, romanta
+  --
+  trova, doina, balada, fado romanta
+  trova, doina, fado, balada, romanta
+  --
+  trova, doina, fado, romanta, doina
+  trova, fado, balada, doina, romanta
+  --
+  trova, fado, doina, balada, romanta //asta
+  trova, fado, doina, romanta, balada //si asta
+  trova, fado, romanta, balada, doina
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
