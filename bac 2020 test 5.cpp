@@ -81,3 +81,38 @@ x1; yn; d2
     }solutie[100];
     
   }s;
+
+
+3.#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char a[7][7];
+    int i,j;
+    
+    for(i=0;i<6;i++)
+         for(j=0;j<6;j++)
+     {
+         a[i][j]='*';
+         if (j<3)
+         {
+             if (i+j>=5 || i<=j)
+             a[i][j]='(';
+         }
+         else
+         {
+             if (i+j<=5 || i>=j)
+             a[i][j]=')';
+             
+         }
+     }
+         
+          for(i=0;i<6;i++)
+ {        for(j=0;j<6;j++)
+         cout<<a[i][j]<<" ";
+         cout<<endl;
+}
+         
+    return 0;
+}
