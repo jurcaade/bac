@@ -66,7 +66,7 @@ d)
   citește n
  (număr natural nenul)
 x1; yn; d2
-┌dacă sqrt(n)=int(sqrt(n)) atunci
+┌dacă radical(n)=[radical(n)] atunci
 │ scrie 'D',x
 │altfel scrie 'N'
 └■
