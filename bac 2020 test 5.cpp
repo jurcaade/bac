@@ -146,3 +146,31 @@ int main() {
     cout<<baza(n);
     return 0;
 }
+
+
+2.
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char s[101],*p;
+    cin.getline(s,101);
+    p=strtok(s," ");
+    int nr=0;
+    while(p!=NULL)
+    {
+        int ok=1;
+        for (int i=0;i<strlen(p);i++)
+        if ((p[i]<'0' || p[i]>'9') && p[i]!='-')
+        ok=0;
+        
+        if (ok==1)
+        nr++;
+        
+        p=strtok(NULL," ");
+    }
+    cout<<nr;
+   
+    return 0;
+}
