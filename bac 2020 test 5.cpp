@@ -36,7 +36,7 @@ sub 2
   // verfifica daca e patrat perfect
   
   
-  b) 2,3,5,6,7
+  b) 2,3,5,6,7,8
   c) #include <iostream>
 
 using namespace std;
