@@ -67,7 +67,7 @@ d)
  (număr natural nenul)
 x1; yn; d2
 ┌dacă radical(n)=[radical(n)] atunci
-│ scrie 'D',x
+│ scrie 'D',radical(n)
 │altfel scrie 'N'
 └■
   
