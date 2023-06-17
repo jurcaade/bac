@@ -174,3 +174,27 @@ int main() {
    
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,s=0,smax=-1001;
+   
+    while(cin>>x)
+    {
+       
+       s=s+x;
+       
+        if (s>smax)
+         smax=s;
+         
+        if(s<0)
+        s=0;
+  
+    }
+    cout<<smax;
+    return 0;
+}
