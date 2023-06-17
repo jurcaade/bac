@@ -71,4 +71,13 @@ x1; yn; d2
 │altfel scrie 'N'
 └■
   
-  
+  2. struct ecuatie
+  {
+    unsigned int numar;
+    struct FaraNume
+    {
+     float pim;
+      float pre;
+    }solutie[100];
+    
+  }s;
