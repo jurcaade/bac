@@ -25,3 +25,50 @@ a 6 a: (cămașă, cravată, șosete, pantaloni, pantofi, sacou)
  2020-15=2005+1=2006
   => a
   
+sub 2
+  1. a n=100
+  1<100 x=2 y=50
+  2<50 x=4 y=25
+  4<25 x=5 y=20
+  5<20 x=10 y=10
+  10=10 A
+  tip D10
+  // verfifica daca e patrat perfect
+  
+  
+  b) 2,3,5,6,7
+  c) #include <iostream>
+
+using namespace std;
+
+int main() {
+   int n,x,y,d;
+   cin>>n;
+   x=1; y=n; d=2;
+   while(x<y)
+   {
+       if (n%d==0)
+       {
+           x=d;
+           y=n/d;
+       }
+       d++;
+   }
+   
+   if (x==y)
+   cout<<'D'<<x;
+   else
+   cout<<'N';
+   return 0;
+}
+
+d)
+  citește n
+ (număr natural nenul)
+x1; yn; d2
+┌dacă sqrt(n)=int(sqrt(n)) atunci
+│ scrie 'D',x
+│altfel scrie 'N'
+└■
+  
+  
