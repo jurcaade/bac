@@ -18,5 +18,31 @@ sub 2
   
   b) 19,20
   
-  c)
+  c)#include <iostream>
+
+using namespace std;
+
+int main() {
+   int n,nr,x,y,j,r,i;
+   cin>>n;
+   nr=0; i=1;
+   while(i<=n)
+   {
+       x=0; y=1; j=1;
+       while(j<i)
+       {
+           r=2*x-y;
+           x=y;
+           y=r;
+           j++;
+           
+       }
+       i++;
+       if (y>0)
+       nr++;
+
+       
+   }
+   cout<<nr;
+}
   
