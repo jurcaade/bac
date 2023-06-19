@@ -45,4 +45,19 @@ int main() {
    }
    cout<<nr;
 }
+
+d)
+citește n (număr natural nenul)
+nr0; 
+┌cât timp i<-1,n execută
+│ x0; y1; j1
+│ ┌cât timp j<i execută
+│ │ r2*x-y; xy; yr
+│ │ jj+1
+│ └■
+│ ┌dacă y>0 atunci
+│ │ nrnr+1
+│ └■
+└■
+scrie nr
   
