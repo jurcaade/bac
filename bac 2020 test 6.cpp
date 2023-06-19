@@ -60,4 +60,42 @@ nr0;
 │ └■
 └■
 scrie nr
+
+2.f(10,5)=2+f(5,5)=4
+  f(5,5) =1+f(0,5)=2
+  f(0,5) =0+f(0,0)=1
+  f(0,0)=1
+
+  f(10,6)=1+f(4,6)=5
+  f(4,6)=1+f(4,2)=4
+  f(4,2)=2+f(2,2)=3
+  f(2,2)=1
+  x1=6
+  x2=10
+
+  3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[10][10];
+    
+    for (int i=0;i<4;i++)
+     for (int j=0;j<5;j++)
+     a[i][j]=16+j-5*i;
+     
+     
+      for (int i=0;i<4;i++)
+ {    for (int j=0;j<5;j++)
+     cout<<a[i][j]<<" ";
+     cout<<endl;
+}
+    return 0;
+}
+
+
+
+
+
+
   
