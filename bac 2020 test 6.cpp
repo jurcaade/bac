@@ -128,7 +128,34 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+#include <cstring>
 
+using namespace std;
+
+int main() {
+    char s[101],*p;
+    cin.getline(s,101);
+    p=strtok(s," ");
+    int nrc=0,nrv=0;
+    while(p!=NULL)
+    {
+        nrc=0; nrv=0;
+        for (int i=0;i<strlen(p);i++)
+        if (strchr("aeiou",p[i]))
+        nrv++;
+        else
+        nrc++;
+        
+        if (nrv<nrc)
+        cout<<p<<endl;
+        
+        p=strtok(NULL," ");
+    }
+    
+    return 0;
+}
 
 
   
