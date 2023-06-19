@@ -157,5 +157,46 @@ int main() {
     return 0;
 }
 
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int p1,p2,aux,aux2,nr=0;
+    cin>>p1>>p2;
+    int n=0;
+     n*=100000;
+    
+    for (int i=1;i<=9;i++)
+     for (int j=1;j<=9;j++)
+{       
+        if (i*j==p1)
+ {       n=i*1000000+j*100000;
+    int aux=n;
+    
+    for (int i=1;i<=9;i++)
+     for (int j=1;j<=9;j++)
+   {  n=aux;
+       if (i*j==p2)
+       { 
+          n=n+i*10+j;
+          aux2=n;
+         
+          for (int k=0;k<=9;k++)
+          {   n=aux2;
+              n=n+k*10000+k*1000+k*100; 
+              cout<<n<<" ";
+          }
+        }
+    }     
+}
+          
+}
+
+    
+    
+    return 0;
+}
 
   
