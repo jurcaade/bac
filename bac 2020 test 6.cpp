@@ -93,7 +93,40 @@ int main() {
     return 0;
 }
 
+sub 1
+1.
+#include <iostream>
 
+using namespace std;
+void prodprim(int n, int &p)
+{
+    p=1;
+    int k=0;
+    int d=2;
+    while(n>1)
+    {
+        k=0;
+        
+        while(n%d==0)
+     {   n/=d;
+        k++;
+    }
+    
+      if (k>0)
+      p*=d; 
+      
+      d++;
+    }
+    
+    
+}
+int main() {
+   int n,p;
+   cin>>n;
+   prodprim(n,p);
+   cout<<p;
+    return 0;
+}
 
 
 
