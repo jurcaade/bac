@@ -69,3 +69,15 @@ d)citește n
 │└■
 └■
 scrie m
+
+2.
+struct biblio
+{
+  unsigned int numar;
+  struct FaraNume
+  {
+   char titlu[21];
+    char autor[21];
+  }c[100];
+  
+}
