@@ -81,3 +81,90 @@ struct biblio
   }c[100];
   
 }
+
+3.s=stilou
+tip ou
+s=r
+t=o
+i=s
+l=u
+tip rosu
+ou
+rosu
+
+
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+int putere(int n,int p)
+{
+    int d=2,k=0;
+    while(n>1)
+    {
+        k=0;
+            while(n%d==0)
+            {
+                n/=d;
+                k++;
+            }
+            if (d==p)
+             return k;
+         d++; 
+    }
+    return -1;
+    
+}
+int main() {
+    int n,p;
+    cin>>n>>p;
+    cout<<putere(n,p);
+    
+    return 0;
+}
+2.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,a[21][21],ok=0;
+    cin>>m>>n;
+    for (int i=1;i<=m;i++)
+    for (int j=1;j<=n;j++)
+    cin>>a[i][j];
+    
+      for (int i=1;i<=m;i++)
+    for (int j=1;j<=m;j++)
+        if (a[i][1]==a[j][n])
+        {
+            cout<<a[i][1]<<" ";
+            ok=1;
+        }
+        
+        if (ok==0)
+        cout<<"nepolarizate";
+    
+    
+    return 0;
+}
+
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int s=0,smin=1001,x;
+    
+    while(cin>>x)
+    {
+        s+=x;
+        if (s<smin)
+        smin=s;
+        
+        if (s>0)
+        s=0;
+        
+    }
+    cout<<smin;
+    return 0;
+}
