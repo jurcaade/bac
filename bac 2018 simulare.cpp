@@ -64,9 +64,13 @@ sub 2
     a[i][j]=1;
     
 
-5.
-  #include <iostream>
+/*
+  https://profesorjitaruionel.com/wp-content/uploads/2018/03/E_d_Informatica_2018_C_sp_MI_var_simulare_LRO.pdf
+  */
+
+
 #include <cstring>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -78,34 +82,39 @@ int main() {
     {
        strcpy(v[i++],p);
         p=strtok(NULL," ");
-        
+
     }
-    int n=i;
-    
+    int n=i,poz; ///n= nr de cuvinte.. v[i]= cuv de pe linia i
+
     for (i=0;i<n;i++)
       { int l=strlen(v[i]);
+        poz= l/2;
           if (l%2!=0)
         {
-                strcpy(a,v[i]+l/2+1);
-                v[i][l/2+1]=v[i][l/2];
-                strcpy(v[i]+l/2+2,a);
-        
-            
+      
+                char aux[101];
+                strcpy(aux,v[i]);
+                strcpy(a,aux+l/2+1);
+                aux[l/2+1]=aux[l/2];
+                strcpy(aux+l/2+2,a);
+
             for (int j=0;j<n;j++)
-            if (strcmp(v[i],v[j])==0)
-            ok=1;
+            if (strcmp(aux,v[j])==0)
+                ok=1;
             
-            
-            
+
+
+
         }
       }
     if (ok==1)
     cout<<"DA";
     else
     cout<<"NU";
-    
+
     return 0;
 }
+
     
 sub 3
   1.f(2203,2018)=10*f(220,201)=1100
