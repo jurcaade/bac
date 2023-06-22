@@ -214,3 +214,33 @@ int main() {
   in cazul in care gasim o afisam si resetam vectorul de frecventa ca sa nu se afiseze si restul numerelor cu acelasi nr de frecventa
   si aceeasi cifra a unitatilor.
  */
+
+var mai buna
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int x,nrmax=0,v[101]={},s[101]={};
+   int k=0;
+   while(cin>>x)
+   { k++;
+       v[x%10]=k;
+       s[x%10]++;
+       if (s[x%10]>nrmax)
+       nrmax=s[x%10];
+   }
+   
+ 
+ 
+   for (int i=0;i<=9;i++)
+  {
+    if (s[i]==nrmax)
+   {    cout<<v[i]<<" ";
+   
+  }
+   
+   
+  }
+    return 0;
+}
