@@ -65,4 +65,22 @@ d)
 │└■
 └
 scrie y
+
+
+2. lant elementar {1,6,3,5}
+ciclu neelementar {1,6,3,5,6,1}
+
+
+3.s=ou
+tip ou
+s=stil rtil roil rosl rosu
+s[0] s=r
+s[1] t=r+3*-1 t=o
+s[2] i=s
+s[3] l=r+3 l=u
+tip rosu
+ou
+rosu
+
+
  
