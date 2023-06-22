@@ -82,5 +82,37 @@ tip rosu
 ou
 rosu
 
+sub 3
+  1.#include <iostream>
+
+using namespace std;
+int suma(int &n)
+{
+    int d=2,p=0,s=0;
+    while(n>1)
+    {
+        p=0;
+       while(n%d==0)
+     {
+         n/=d;
+       p++;
+    }
+        if (p>0)
+        s+=d;
+        
+        d++;
+    }
+    return s;
+    
+    
+    
+}
+int main() {
+    int n;
+    cin>>n;
+    cout<<suma(n);
+    return 0;
+}
+
 
  
