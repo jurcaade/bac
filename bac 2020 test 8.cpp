@@ -200,7 +200,7 @@ int main() {
    for (int i=n;i>=1;i--)
   {
     if (s[v[i]%10]==nrmax)
-   {    cout<<v[i]<<" ";
+   {    cout<<i<<" ";
       s[v[i]%10]=0;
   }
    
