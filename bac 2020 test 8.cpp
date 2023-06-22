@@ -174,4 +174,43 @@ int main() {
     return 0;
 }
 
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+   int x,nrmax=0,v[101]={},s[101]={},i=1;
+   
+   while(cin>>x)
+   {
+       v[i++]=x;
+       s[x%10]++;
+   }
+   
+   int n=i-1;
+   
+   for (int i=0;i<=9;i++)
+   if (s[i]!=0)
+   {
+       if (s[i]>nrmax)
+       nrmax=s[i];
+   }
  
+   for (int i=n;i>=1;i--)
+  {
+    if (s[v[i]%10]==nrmax)
+   {    cout<<v[i]<<" ";
+      s[v[i]%10]=0;
+  }
+   
+   
+  }
+    return 0;
+}
+/* Algoritmul cieste toate numerele din fisier si le retine intr un vector, cat si frecventele cifrelor unitatilor acestora
+  parcurgem vectorul de frecventa pentru cifrele unitatilor si gasim frecventa maxima a cifrei unitatilor
+  apoi parcurgem vectorul de numere invers in verificam care numere au frecventa cifrei unitatilor egala cu cea maxima
+  in cazul in care gasim o afisam si resetam vectorul de frecventa ca sa nu se afiseze si restul numerelor cu acelasi nr de frecventa
+  si aceeasi cifra a unitatilor.
+ */
