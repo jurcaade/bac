@@ -168,7 +168,9 @@ int main() {
     }
     
      if (lung>lmax)
-     lmax=lung;
+{    lmax=lung;
+           nr=1;
+}
     else
      if (lung==lmax)
         nr++;
