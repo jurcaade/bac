@@ -3,7 +3,7 @@ sub 1
 2. b
 3. a
 4. c
-5. a
+5. b
 
 sub 2
 1. a) i=1 1 1 1
@@ -12,7 +12,7 @@ sub 2
   for i 3 3
   1 1 1 2 2 2 3 3
 
-  b) 45, 49
+  b) 46, 50
   c)#include <iostream>
 
 using namespace std;
