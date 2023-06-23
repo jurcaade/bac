@@ -135,3 +135,42 @@ int main() {
     
     return 0;
 }
+
+
+3.
+      #include <iostream>
+
+using namespace std;
+
+int main() {
+    int k,x,lung=0,lmax=0,nr=0;
+    cin>>k;
+    while(cin>>x)
+    {
+        if (x%k==0)
+        lung++;
+        else
+        {
+            if (lung>lmax)
+         {   lmax=lung;
+            nr=1;
+        }
+         else
+            if (lung==lmax)
+            nr++;
+            
+            lung=0;
+          
+        }
+        
+    }
+    
+     if (lung>lmax)
+     lmax=lung;
+    else
+     if (lung==lmax)
+        nr++;
+    
+    cout<<lmax<<" "<<nr;
+    return 0;
+}
