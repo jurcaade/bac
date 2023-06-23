@@ -58,3 +58,33 @@ t1
       
 3. 3 componente conexe
       cea mai mica: 4,7
+
+
+sub 3
+1.#include <iostream>
+
+using namespace std;
+void suma(int n, int &s)
+{
+    int v[11]={};
+    s=0;
+    while(n>0)
+    {
+        
+       v[n%10]++;
+        
+        n/=10;
+    }
+    
+   for (int i=1;i<=9;i+=2)
+   if (v[i]!=0)
+   s+=i;
+    
+}
+int main() {
+    int n,s;
+    cin>>n;
+    suma(n,s);
+    cout<<s;
+    return 0;
+}
