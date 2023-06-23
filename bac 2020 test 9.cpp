@@ -89,7 +89,7 @@ int main() {
     return 0;
 }
 
-2.
+2. //prefix
       #include <iostream>
 #include <cstring>
 using namespace std;
@@ -109,7 +109,29 @@ int main() {
      cout<<s[i]<<" ";
 }
     
+    return 0;
+}
+
+//sufix
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    int n;
+    char s[21][21],a[21]={};
+    cin>>n;
+    for (int i=0;i<n;i++)
+    cin>>s[i];
     
+    int m=strlen(s[n-1]);
+    
+     for (int i=0;i<n-1;i++)
+ {   strcpy(a,(s[i]+(strlen(s[i])-m)));
+        if (strcmp(a,s[n-1])==0) 
+        cout<<s[i]<<" ";
+}
+
     
     return 0;
 }
