@@ -98,6 +98,7 @@ int main() {
     int n;
     char s[21][21],a[21]={};
     cin>>n;
+      cin.get();
     for (int i=0;i<n;i++)
     cin>>s[i];
     
@@ -121,6 +122,7 @@ int main() {
     int n;
     char s[21][21],a[21]={};
     cin>>n;
+      cin.get();
     for (int i=0;i<n;i++)
     cin>>s[i];
     
