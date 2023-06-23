@@ -49,3 +49,12 @@ t1
 │ scrie t,' '
 |  i=i-1
 └■
+
+
+      2. f(0) =0
+      f(2020)= 0+ f(101) =6
+      f(101)=1+f(5) =6
+      f(5)= 5+ f(0) =5
+      
+3. 3 componente conexe
+      cea mai mica: 4,7
