@@ -13,7 +13,7 @@ caine ponei  -- pt cuvant fara restrictii sunt 5
 2+5+2+5+2=14
   d
 4.a
-5.a
+5.c
 
   sub 2
 1. i=7 j=16 s=16
