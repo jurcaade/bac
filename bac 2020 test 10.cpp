@@ -84,7 +84,39 @@ ss+(i%2)*j+(j%2)*i
 └
 scrie s
 
+2. struct spectacol
+{
+unsigned int cod;
+unsigned int nrActori;
+unsigned int varsta[10];
 
+}s[20];
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[5][6];
+    
+    for (int i=0;i<4;i++)
+    for (int j=0;j<5;j++)
+    cin>>a[i][j];
+    
+     for (int i=0;i<4;i++)
+    for (int j=0;j<5;j++)
+    a[i][j]=5*(i+1)-j;
+    
+     for (int i=0;i<4;i++)
+ {   for (int j=0;j<5;j++)
+    cout<<a[i][j]<<" ";
+    cout<<endl;
+}
+    
+    
+    return 0;
+}s
 
 
 
