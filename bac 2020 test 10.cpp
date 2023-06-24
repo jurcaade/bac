@@ -135,6 +135,8 @@ void produs(int n,int&p)
     }
         n/=10;
     }
+  if (p==1)
+    p=-1;
 
 }
 
