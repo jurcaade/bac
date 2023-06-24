@@ -146,6 +146,51 @@ int main() {
     return 0;
 }
 
+2.
+  #include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+   char s[101],t[101]={},a,ok=0;
+   cin.getline(s,101);
+   char *p;
+   p=strtok(s," "); //primul cuvant
+   
+    strcat(t,p);
+    strcat(t," ");  //il memoram in t
+    int n=strlen(p);
+    a=p[n-1];    // retinem ultima litera a primului cuvant
+    
+ p=strtok(NULL," ");  // trecem la urmatorul cuvant
+   
+   while(p!=NULL)
+   {
+       n=strlen(p);
+       if (a==p[n-1])   
+       {
+           strcat(t,"succes"); 
+           strcat(t," "); 
+          ok=1;
+       }
+      
+           strcat(t,p);
+           strcat(t," "); 
+         
+        a=p[n-1];
+   
+       
+       p=strtok(NULL," ");
+   }
+   strcpy(s,t);
+   if (ok==0)
+   cout<<"nu exista";
+   else
+   cout<<s;
+   
+   
+    return 0;
+}
 
   
   
