@@ -192,5 +192,45 @@ int main() {
     return 0;
 }
 
+3.#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,y,z,r=0,prer=0,rmax=0,nrmax=0,nr=2,ok=0;
+    cin>>x;
+    cin>>y;
+    r=y-x;
+    
+    while(cin>>z)
+    {  
+        prer=r;
+    
+        r=z-y;
+    
+        if (prer==r)
+     {   nr++;
+        ok=1;
+    }
+        else
+        nr=2;
+        
+        if (nr>nrmax)
+        {
+            rmax=r;
+            nrmax=nr;
+            
+        }
+    
+        
+        y=z;
+        
+    }
+    if (ok==0)
+    cout<<"nu exista";
+    else
+    cout<<rmax;
+    return 0;
+}
   
   
