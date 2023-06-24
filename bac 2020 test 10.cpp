@@ -119,6 +119,33 @@ int main() {
 }s
 
 
+1.
+#include <iostream>
+
+using namespace std;
+void produs(int n,int&p)
+{
+    int v[10]={};
+    p=1;
+    while(n>0)
+    {
+        if (n%2==0 && v[n%10]==0)
+     {   v[n%10]++;
+        p*=n%10;
+    }
+        n/=10;
+    }
+
+}
+
+int main() {
+    int n,p;
+    cin>>n;
+    produs(n,p);
+    cout<<p;
+    return 0;
+}
+
 
   
   
