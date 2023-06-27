@@ -97,3 +97,33 @@ int main() {
     
     return 0;
 }
+
+sub 3
+1.#include <iostream>
+#include <math.h>
+using namespace std;
+
+void patrate(int x, int y)
+{
+    int s=0;
+    for (int i=x;i<=y;i++)
+    if (int(sqrt(i))==sqrt(i))
+ {    
+     if (s==0)
+      cout<<i;
+      else
+      cout<<'+'<<i;
+      
+      s+=i;
+   
+}
+    cout<<'='<<s;
+    
+}
+int main() {
+    int x,y;
+    cin>>x>>y;
+    patrate(x,y);
+    return 0;
+}
+
