@@ -14,3 +14,49 @@ a 9 a: (vrisea, busuioc, azalea)
   4.b
   5. ne trb 5 noduri sa folosim toate muchiile
 restul nodurilor componente conexe=> 16 c)
+
+sub 2
+1. n=45530 tip 10
+  b) 111, 110, 100
+  c)#include <iostream>
+
+using namespace std;
+
+int main() {
+    int m,n,c;
+    cin>>n;
+    m=0;
+    if (n==0)
+        m=10;
+    else
+    do
+    {
+        c=n%10; n/=10;
+        if (c>=m)
+        m=c;
+        else
+        m=10;
+        
+    }while(n!=0);
+        
+        cout<<m;
+        
+    
+    return 0;
+}
+
+d) citeşte n (număr natural)
+m0
+┌dacă n=0 atunci
+│ m10
+│altfel
+│┌cat timp n!=0 executa
+││ cn%10; n[n/10]
+││┌dacă c≥m atunci
+│││ mc
+│││altfel
+│││ m10
+││└■
+│└
+└■
+scrie m
