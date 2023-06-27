@@ -155,3 +155,27 @@ int main() {
    cout<<s;
     return 0;
 }
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int x,nr=1,pre=-1;
+    
+    while(cin>>x)
+    {
+        if (pre==x)
+        nr++;
+        else
+        {
+            if (pre!=-1)
+            cout<<pre<<" "<<nr<<" ";
+            nr=1;
+        }
+        pre=x;
+    }
+     cout<<pre<<" "<<nr<<" ";
+    return 0;
+}
