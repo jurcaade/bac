@@ -17,7 +17,7 @@ restul nodurilor componente conexe=> 16 c)
 
 sub 2
 1. n=45530 tip 10
-  b) 111, 110, 100
+  b) 1110, 1100, 1000
   c)#include <iostream>
 
 using namespace std;
@@ -60,3 +60,40 @@ m0
 │└
 └■
 scrie m
+
+2.  struct sera
+{ unsigned int specie;
+struct FaraNume
+  {
+char denumireStiintifica[21];
+char denumirePopularea[21];
+}specie[100];
+
+
+}s;
+
+3.
+  #include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[8][8];
+    
+    for(int i=1;i<=7;i++)
+    for (int j=1;j<=7;j++)
+    cin>>a[i][j];
+    
+    int p=1;
+     for (int j=1;j<=7;j++)
+      p*=a[j][j];
+      
+      for(int i=7;i>=1;i--)
+{    cout<<p<<" ";
+     p=p/a[i][i];
+       
+}
+    
+    
+    return 0;
+}
